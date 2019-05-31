@@ -17,18 +17,20 @@ Lastly, I want to thank all the brave lookout staff, firefighters, civil servant
 
 ### To Do:
 - Alberta's Historical Wildfire Database has data from 1931 to 1968 recorded on microfilm. Since I wanted to do this today, and also since I'm not in Edmonton, I had to leave this time period out.
+- Include BC Data (https://www.canadawildfire.org/cffdrs-r-package?)
+- Look at other factors for fires, like aridity and duration of actual fire season
 
 ### For more reading:
+
+#### Explained
 - [Carman, Tara (2017, July 29). Area of B.C. burned by wildfires at a 56-year high. CBC News.](https://www.cbc.ca/news/canada/british-columbia/area-of-b-c-burned-by-wildfires-at-a-56-year-high-1.4226227)
 - Tara Carman's [GitHub Repo](https://github.com/taracarman/BC_Wildfires/blob/master/BC%20Wildfires.ipynb) for the above story
 - [Nadkarni, Kabir (2018, September 01). Opinion: UCP's climate denial unacceptable in face of worsening wildfire trends. The Gateway.](https://www.thegatewayonline.ca/2018/09/ucp-climate-denial-unacceptable-wildfire-trends/)
 - [McGillivray, Glenn (2019, May 29). Opinion: Climate change is a big factor in Alberta’s wildfires – but not in the way you might think. The Globe and Mail.](https://www.theglobeandmail.com/opinion/article-climate-change-is-a-big-factor-in-albertas-wildfires-but-not-in-the/)
 - [Pierre-Louis, Kendra & Popovich, Nadja (2018, November 27). Climate Change Is Fueling Wildfires Nationwide, New Report Warns. The New York Times.](https://www.nytimes.com/interactive/2018/11/27/climate/wildfire-global-warming.html)
 - [Thomson, Graham (2019, May 29). Opinion: Kenney not a climate change denier but a climate change dodger. iPolitics](https://ipolitics.ca/2019/05/29/kenney-not-a-climate-change-denier-but-a-climate-change-dodger/)
+
+#### Academic
 - [Flannigan, Mike (n.d.). Fire and Climate Change. University of Alberta.](https://sites.ualberta.ca/~flanniga/climatechange.html)
-- https://www.canadawildfire.org/cffdrs-r-package
-
-## Reference
-- Main data source: Wildfire Alberta [Historical Wildfire Database](https://wildfire.alberta.ca/resources/historical-data/historical-wildfire-database.aspx) [(2019-05-03 Archive)](https://web.archive.org/web/20190503204305/https://wildfire.alberta.ca/resources/historical-data/historical-wildfire-database.aspx)
-
-I've saved the data from this site to this repository as well to enable easy access for anyone else looking for the same information as I did. Similarly, I've left `ABWildfires_1961-2017.csv` here as a full set of compiled data (only for year and area) to save anyone else from needing to run these scripts.
+- [cffdrs: an R package for the Canadian Forest Fire Danger Rating System. Canada Wildfire.](https://www.canadawildfire.org/cffdrs-r-package)
+- (Paywalled) [Robinne, F.-N., Parisien, M.-A., & Flannigan, M. (2016). Anthropogenic influence on wildfire activity in Alberta, Canada. International Journal of Wildland Fire, 25(11), 1131.](https://doi.org/10.1071/WF16058)
