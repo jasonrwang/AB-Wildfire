@@ -1,5 +1,3 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jasonrwang/AB-Wildfire/master)
-
 # Alberta Wildfire Area Statistics Compilation
 
 A quick peek into Alberta's wildfire history.
