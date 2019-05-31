@@ -1,6 +1,7 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jasonrwang/AB-Wildfire/master)
 
 # Alberta Wildfire Area Statistics Compilation
+
 A quick peek into Alberta's wildfire history.
 
 Last modified: 2019-05-31 (or the latest date shown on my GitHub repo)
@@ -18,6 +19,7 @@ Lastly, I want to thank all the brave lookout staff, firefighters, civil servant
 ![ABWildfires_1961-2018](img/ABWildfires_1961-2018.png)
 
 ### To Do:
+
 - Alberta's Historical Wildfire Database has data from 1931 to 1968 recorded on microfilm. Since I wanted to do this today, and also since I'm not in Edmonton, I had to leave this time period out.
 - Include BC Data (https://www.canadawildfire.org/cffdrs-r-package?)
 - Look at other factors for fires, like aridity and duration of actual fire season
@@ -25,6 +27,7 @@ Lastly, I want to thank all the brave lookout staff, firefighters, civil servant
 ### For more reading:
 
 #### Explained
+
 - [Carman, Tara (2017, July 29). Area of B.C. burned by wildfires at a 56-year high. CBC News.](https://www.cbc.ca/news/canada/british-columbia/area-of-b-c-burned-by-wildfires-at-a-56-year-high-1.4226227)
 - Tara Carman's [GitHub Repo](https://github.com/taracarman/BC_Wildfires/blob/master/BC%20Wildfires.ipynb) for the above story
 - [Nadkarni, Kabir (2018, September 01). Opinion: UCP's climate denial unacceptable in face of worsening wildfire trends. The Gateway.](https://www.thegatewayonline.ca/2018/09/ucp-climate-denial-unacceptable-wildfire-trends/)
@@ -33,6 +36,7 @@ Lastly, I want to thank all the brave lookout staff, firefighters, civil servant
 - [Thomson, Graham (2019, May 29). Opinion: Kenney not a climate change denier but a climate change dodger. iPolitics](https://ipolitics.ca/2019/05/29/kenney-not-a-climate-change-denier-but-a-climate-change-dodger/)
 
 #### Academic
+
 - [Flannigan, Mike (n.d.). Fire and Climate Change. University of Alberta.](https://sites.ualberta.ca/~flanniga/climatechange.html)
 - [cffdrs: an R package for the Canadian Forest Fire Danger Rating System. Canada Wildfire.](https://www.canadawildfire.org/cffdrs-r-package)
 - (Paywalled) [Robinne, F.-N., Parisien, M.-A., & Flannigan, M. (2016). Anthropogenic influence on wildfire activity in Alberta, Canada. International Journal of Wildland Fire, 25(11), 1131.](https://doi.org/10.1071/WF16058)
