@@ -23,6 +23,8 @@ Lastly, I want to thank all the brave lookout staff, firefighters, civil servant
 
 - Alberta's Historical Wildfire Database has data from 1931 to 1968 recorded on microfilm. Since I wanted to do this today, and also since I'm not in Edmonton, I had to leave this time period out.
 - Look at other factors for fires, like aridity and duration of actual fire season
+- Add in other provinces
+- Make scripts a bit more robust for next year... how?
 
 ### For more reading:
 
