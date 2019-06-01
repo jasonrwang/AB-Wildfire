@@ -19,8 +19,8 @@ Lastly, I want to thank all the brave lookout staff, firefighters, civil servant
 _2019-06-01: [Simon Bridge](https://twitter.com/srjbridge) pointed out to me that I missed a dataset from the Canadian Wildfire Info System Datamart, which I had been looking at, actually has data for all provinces from 1950 to 2016. It's listed under 'National Fire Database fire point data' at the [CWFIS site](http://cwfis.cfs.nrcan.gc.ca/datamart). Thanks Simon._
 
 ![AB Wildfires_1961-2019](img/ABWildfires_1961-2019.png)
-![BC Wildfires_1919-2019](img/BCWildfires_1919-2019.png)
 ![AB and BC Wildfires_1919-2019](img/ABandBC_Wildfires_1919-2019.png)
+![CA Wildfires_1945-2017](img/CADWildfires_1946-2016.png)
 
 ### To Do:
 
