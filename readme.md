@@ -29,6 +29,15 @@ _2019-06-01: [Simon Bridge](https://twitter.com/srjbridge) pointed out to me tha
 - Make scripts a bit more robust for next year... how?
 - Make plots interactive!
 
+#### A guide to my logic:
+
+I wrote these files in the following order; it might make sense to read them that way too.
+
+1. AB-Wildfire
+2. BC-Wildfire
+3. Summary Stats
+4. CA-Wildfire
+
 ### For more reading:
 
 #### Explained
