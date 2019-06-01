@@ -16,8 +16,11 @@ Of course this analysis is limited by the quality of data available. I've done m
 
 Lastly, I want to thank all the brave lookout staff, firefighters, civil servants, and countless more people on the frontlines fighting the fires. It's a dangerous and incredibly tiring job to deal with such crises. Similarly, my heart goes out to all those displaced by the fires.
 
-![ABWildfires_1961-2019](img/ABWildfires_1961-2019.png)
-![BCWildfires_1919-2019](img/BCWildfires_1919-2019.png)
+_2019-06-01: [Simon Bridge](https://twitter.com/srjbridge) pointed out to me that I missed a dataset from the Canadian Wildfire Info System Datamart, which I had been looking at, actually has data for all provinces from 1950 to 2016. It's listed under 'National Fire Database fire point data' at the [CWFIS site](http://cwfis.cfs.nrcan.gc.ca/datamart). Thanks Simon._
+
+![AB Wildfires_1961-2019](img/ABWildfires_1961-2019.png)
+![BC Wildfires_1919-2019](img/BCWildfires_1919-2019.png)
+![AB and BC Wildfires_1919-2019](img/ABandBC_Wildfires_1919-2019.png)
 
 ### To Do:
 
