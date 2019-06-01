@@ -16,7 +16,7 @@ Of course this analysis is limited by the quality of data available. I've done m
 
 Lastly, I want to thank all the brave lookout staff, firefighters, civil servants, and countless more people on the frontlines fighting the fires. It's a dangerous and incredibly tiring job to deal with such crises. Similarly, my heart goes out to all those displaced by the fires.
 
-![ABWildfires_1961-2018](img/ABWildfires_1961-2018.png)
+![ABWildfires_1961-2018](img/ABWildfires_1961-2019.png)
 
 ### To Do:
 
