@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2018-05-22T14:19:20/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2018-05-22T14:19:20/select2/select2.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/css/:version:2018-05-22T14:19:20/main.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2018-05-22T14:19:20/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/ckanext-geoview/:version:2018-05-22T14:19:29/css/geo-resource-styles.css" />
+<link rel="stylesheet" type="text/css" href="/fanstatic/edc_resource/:version:2019-01-21T10:52:42.60/:bundle:edc_dataset_view.css;edc_theme.css;edc_gov.css;edcdisqus.css;responsive.css" />
+<!--[if lte ie 8]><link rel="stylesheet" type="text/css" href="/fanstatic/edc_resource/:version:2019-01-21T10:52:42.60/edc_theme_ie8.css" /><![endif]-->
+
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan " />
+      <meta name="viewport" content="width=device-width, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fire Incident Locations - Historical - Datasets - Data Catalogue</title>
+
+    
+    <link rel="shortcut icon" href="https://data.gov.bc.ca/favicon.ico" />
+    
+    
+      
+    
+    
+
+
+    
+  
+  
+  <meta property="og:title" content="Fire Incident Locations - Historical - Data Catalogue">
+  <meta property="og:description" content="Wildfire historic incident point locations for all fire seasons before the current season.  Supplied through various sources.  Not to be used for legal purposes.  This data includes all incidents tracked by BC Wildfire Service, ie. actual fires, suspected fires, nusiance fires, smoke chases, etc.  On April 1 of each year this layer is updated with the previous fire season&amp;#39;s data">
+
+      
+      
+      
+      
+      
+      
+    
+
+
+  <script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-7579094-3', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+</script>
+
+  </head>
+
+  
+  <body class="grid-12" data-site-root="https://catalogue.data.gov.bc.ca/" data-locale-root="https://catalogue.data.gov.bc.ca/" >
+
+    <div id="wb-body">
+  <div id="wb-skip">
+    <ul id="wb-tphp">
+      <li id="wb-skip1"><a href="#wb-cont">Skip to main content</a></li>
+      <li id="wb-skip2"><a href="#wb-nav">Skip to footer</a></li>
+      <li id="wb-skip3"><a href="http://www2.gov.bc.ca/gov/admin/accessibility.page">Accessibility Statement</a></li>
+    </ul>
+  </div>
+  <div id="wb-head">
+    <div id="wb-head-in">
+      <header>
+        
+          
+    
+
+
+<div id="header" class="collapsed-header">
+
+        <div id="header-main" class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container" >
+                <div id="header-main-row1">
+                    <div class="row">
+                        <div class="span8 navbar-brand">
+                            <div href="http://www2.gov.bc.ca/" class="logo">
+                                <a href="http://www2.gov.bc.ca/"><img src="/assets/gov/images/gov3_bc_logo.png"></a>
+                                <a href="/dataset" class="hidden-xs">Data Catalogue</a>
+                            </div>
+                            <div class="navbar-header">
+                                <button data-target="#header-main-row2" data-toggle="collapse" class="menu-button navbar-toggle mini-menu-trigger collapsed" type="button"></button>
+                                <button data-target="#header-main-row1 .header-search.collapse" data-toggle="collapse" class="search-button navbar-toggle mini-menu-trigger collapsed" type="button"></button>
+                            </div>
+                        </div>
+                        <div class="span4 header-main-right hidden-xs">
+                            <div class="header-main-search">
+                              <form role="form" class="" method="get" action="/dataset" id="suggestion_form">
+                                <label style="display:none;" for="global-search">Search</label>
+                                <input type="text" autocomplete="off" value="" name="q" placeholder="Search datasets..." class="searchbox">
+                                
+                                <i class="fa fa-search icon-search" aria-hidden="true"></i>
+                                <div class="search-trigger"> </div>
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="header-search collapse">
+                       <div class="search-boarder-arror visible-xs-block"></div>
+                       <div class="header-main-right">
+                           <div class="gov search">
+                               <form role="form" class="" method="get" action="https://catalogue.data.gov.bc.ca/dataset" id="form-dataset-search-header">
+                                   <label class="sr-only" for="dataset-search">Search</label>
+                                   <input type="text" autocomplete="off" value="" name="q" placeholder="Search BC Data Catalogue" class="searchbox" id="dataset-search">
+                                   <div class="search-trigger"> </div>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+
+                <div id="header-main-row2" class="collapse">
+                    <div class="header-main-right">
+                        <div id="header-links">
+                            <div class="account-container__mobile">
+    
+        
+            <nav class="account not-authed">
+                
+                    
+                        
+                            <a href="https://apps.gov.bc.ca/int/eas/login.jsp">Log in</a>
+                        
+                    
+                
+            </nav>
+        
+    
+</div>
+
+<ul id="mobile-nav-list" class="inline nav navbar-nav">
+    <li><a href="http://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/databc">What is DataBC?</a></li>
+    <li><a href="/data/site-usage/dataset">Dataset Usage</a></li>
+    <li><a href="http://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/databc/geographic-data-and-services">Geographic Services</a></li>
+    <li><a href="https://engage.gov.bc.ca/data/">Blog</a></li>
+    <li><a href="https://www.bcdevexchange.org/">Developers</a></li>
+    <li><a href="https://forms.gov.bc.ca/databc-contact-us/">Contact</a></li>
+</ul>
+                        </div>
+                    </div>
+
+                    <div class="header-main-left">
+                        <div id="govNavMenu">
+                            <nav class="govNav" id="govMainMenu">
+                                <ul class="firstLevel nav navbar-nav">
+                                    <li><a href="/dataset">Datasets</a></li>
+                                    <li><a href="/organization">Organizations</a></li>
+                                    <li><a href="/groups">Groups</a></li>
+                                    <li class="hassub clearfix">
+                                        <a href="http://www2.gov.bc.ca/gov/content/governments">  Stay up to Date</a>
+                                        <span class="level-trigger"></span>
+                                        <div class="issub" style="z-index: 1008; display: none;">
+                                            <h2 class="hidden-xs">
+                                                    Stay up to Date</h2>
+                                                <ul class="secondLevel childMenu nav navbar-nav">
+                                                    <li>
+                                                        <a href="/feeds/recent.rss" title="Subscribe to New data">Subscribe to New Data</a><span class="no-trigger visible-xs-block"></span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://bccatalogue.disqus.com/latest.rss">Subscribe to Comments</a><span class="no-trigger visible-xs-block"></span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://engage.gov.bc.ca/data/feed/" target="_blank">Subscribe to Blog Posts</a><span class="no-trigger visible-xs-block"></span>
+                                                    </li>
+                                                </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="/about">About</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav id="sub" class="navbar-fixed-top">
+        <div class="navigationRibbon">      
+    <div class="level2Navigation">
+        <div class="container">
+          <div class="account-container">
+              
+                
+                  <nav class="account not-authed">
+                    
+                      
+                        
+                          <a href="https://apps.gov.bc.ca/int/eas/login.jsp">Log in</a>
+                        
+                      
+                    
+                  </nav>
+                
+              
+          </div>
+          
+          <a href="http://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/databc">What is DataBC?</a>
+          <a href="/data/site-usage/dataset">Dataset Usage</a>
+          <a href="http://www2.gov.bc.ca/gov/content/governments/about-the-bc-government/databc/geographic-data-and-services">Geographic Services</a>
+          <a href="https://engage.gov.bc.ca/data/">Blog</a>
+          <a href="https://www.bcdevexchange.org/">Developers</a>
+          <a href="https://forms.gov.bc.ca/databc-contact-us/">Contact</a>
+        </div>
+    </div>
+</div>
+
+<div class="navigationRibbon sub-navigation">   
+  <div class="level3Navigation">
+    <div class="container">
+      <a href="/dataset">Datasets</a>
+      <a href="/organization">Organizations</a>
+      <a href="/groups">Groups</a>
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-rss icon-rss"></i> Stay Up To Date</a>
+        <ul class="dropdown-menu">
+          <li><a href="/feeds/recent.rss" title="Subscribe to New data"><span>Subscribe to New Data</span></a></li>
+          <li><a href="http://bccatalogue.disqus.com/latest.rss">Subscribe to Catalogue Comments</a></li>
+          <li><a href="https://engage.gov.bc.ca/data/feed/" target="_blank">Subscribe to Blog Posts</a></li>
+        </ul>
+      </div>
+      <a href="/about">About</a>
+    </div>
+  </div>          
+</div>
+
+        <div class="site-title visible-xs-inline-block">
+            <h1 class="">Data Catalogue</h1>
+        </div>
+    </nav>
+
+
+  
+        
+      </header>
+    </div>
+  </div>
+
+  <div id="wb-core">
+    <div id="wb-core-in" class="equalize">
+      <div id="wb-main" role="main">
+        <div id="wb-main-in">
+          <div class="wrap">
+  
+    
+    
+    
+    <form action="/dataset" class="search-form search-main">
+    <div class="search-input control-group search-giant">
+      <input type="text" class="search" name="q" autocomplete="off" placeholder="Search datasets...">
+      <button type="submit" value="search">
+        <i class="fa fa-icon icon-search"></i>
+        <span>Submit</span>
+      </button>
+    </div>
+  </form>
+  
+  
+              
+    <div role="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<li class="home"><a href="/"><i class="fa fa-home"></i><span> Home</span></a></li>
+                    
+  
+  <li><a href="/organization">Organizations</a></li>
+  
+  <li><a href="/organization/ministry-of-forests-lands-natural-resource-operations-and-rural-development">Ministry of Forests, Lands, ...</a></li>
+  
+  <li class="active"><a href="/organization/bc-wildfire-service">BC Wildfire Service</a></li>
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper dataset-view">
+
+            
+            
+            
+
+            
+              <div class="primary span9">
+                
+                
+                  <article class="module">
+                    
+                      <header class="module-content page-header">
+                        
+                        <ul class="nav nav-tabs">
+                          
+  
+  <li><a href="/dataset/fire-incident-locations-historical"><i class="fa fa-sitemap"></i> Dataset</a></li>
+  <li><a href="/dataset/groups/fire-incident-locations-historical"><i class="fa fa-users"></i> Groups</a></li>
+  <li><a href="/dataset/activity/fire-incident-locations-historical"><i class="fa fa-clock-o"></i> Activity Stream</a></li>
+
+  
+  <li class="dropdown share-this-record">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share icon-share-alt"></i> Share this Record</a>
+    
+<ul class="dropdown-menu">
+<li><a href="https://plus.google.com/share?url=https://catalogue.data.gov.bc.ca/dataset/fire-incident-locations-historical" target="_blank" title="Share this page on Google+"><i class="fa fa-google-plus icon-google-plus-sign"></i> Google+</a></li>
+<li><a href="https://twitter.com/share?url=https://catalogue.data.gov.bc.ca/dataset/fire-incident-locations-historical" target="_blank" title="Share this page on Twitter"><i class="fa fa-twitter icon-twitter-sign"></i> Twitter</a></li>
+<li><a href="https://www.facebook.com/sharer.php?u=https://catalogue.data.gov.bc.ca/dataset/fire-incident-locations-historical" target="_blank" title="Share this page on Facebook"><i class="fa fa-facebook-square icon-facebook-sign"></i> Facebook</a></li>
+<li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https://catalogue.data.gov.bc.ca/dataset/fire-incident-locations-historical" target="_blank" title="Share this page on LinkedIn"><i class="fa fa-linkedin-square icon-linkedin-sign"></i> LinkedIn</a></li>
+</ul>
+  </li>
+  <li>
+    <a id="permalinkLink" href="#"
+      ><i class="fa fa-link icon-link"></i> Permalink</a>
+  </li>
+  
+
+
+<div class="modal fade" id="permalinkModal" tabindex="-1" role="dialog" aria-labelledby="comment-terms-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="comment-terms-modal-label">Copy Permalink</h4>
+      </div>
+      <div class="modal-body">
+        <div id="permalinkDivContainer">
+          <input type="text" id="permalinkLinkInput" readonly="readonly" value="catalogue.data.gov.bc.ca/dataset/e2dadc60-292f-4d98-b42b-56ca9e4fe694" />
+          <a class="btn hidden-sm hidden-xs" href="#" id="copyPermalink"><i class="fa fa-copy"></i> </a>
+          <div id="permalinkCopiedStatus"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                        </ul>
+                      </header>
+                    
+                    <div class="module-content">
+                      
+                      
+  
+    
+    
+
+    
+
+    
+    
+      
+      
+
+
+
+    
+
+
+
+	
+
+
+<ul class="dataset-markers">
+    <li class="marker dataset-type geographic"><a href="/dataset?type=Geographic">Geographic Dataset</a></li>
+    
+    	
+    	<li class="marker dataset-sector natural-resources"><a href="/dataset?sector=Natural+Resources">Natural Resources</a></li>
+    
+    
+    <li class="marker dataset-iso small"><a href="/dataset?q=iso_topic_string%3A%2AimageryBaseMapsEarthCover%2A">imageryBaseMapsEarthCover</a></li>
+    
+</ul>
+    
+
+    <h1>
+      
+        Fire Incident Locations - Historical
+        
+      
+    </h1>
+
+    
+    
+    
+      <h4 class="description-tracking">
+        
+
+	3060 views (61 recent)
+
+
+      </h4>
+    
+
+    
+    
+    
+      
+        
+      Published by the 
+
+	
+	
+
+
+	
+	
+
+<a href="/organization/ministry-of-forests-lands-natural-resource-operations-and-rural-development">Ministry of Forests, Lands, Natural Resource Operations and Rural Development</a> - <a href="/organization/bc-wildfire-service">BC Wildfire Service</a> 
+    
+    
+      <br/>
+      Licensed under
+      
+  
+    <a href="https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61" rel="dc:rights">Open Government Licence - British Columbia</a>
+  
+  
+    
+  
+
+    
+    
+    
+      
+        <div class="notes embedded-content">
+          <p>Wildfire historic incident point locations for all fire seasons before the current season.  Supplied through various sources.  Not to be used for legal purposes.  This data includes all incidents tracked by BC Wildfire Service, ie. actual fires, suspected fires, nusiance fires, smoke chases, etc.  On April 1 of each year this layer is updated with the previous fire season's data</p>
+        </div>
+      
+    
+    
+    <span class="insert-comment-thread"></span>
+  
+
+  
+    
+  <section class="tags">
+    
+
+<ul class="tag-list">
+  
+    <li>
+      <a class="tag" href="/dataset?tags=emergency+management">emergency management</a>
+    </li>
+  
+    <li>
+      <a class="tag" href="/dataset?tags=fire+location">fire location</a>
+    </li>
+  
+    <li>
+      <a class="tag" href="/dataset?tags=fire+point">fire point</a>
+    </li>
+  
+    <li>
+      <a class="tag" href="/dataset?tags=incident+location">incident location</a>
+    </li>
+  
+    <li>
+      <a class="tag" href="/dataset?tags=incident+points">incident points</a>
+    </li>
+  
+    <li>
+      <a class="tag" href="/dataset?tags=wildfire">wildfire</a>
+    </li>
+  
+</ul>
+  </section>
+
+  
+
+  
+  
+     
+
+  
+
+
+  
+    
+<section id="dataset-resources" class="resources">
+  <h3>Data and Resources</h3>
+  
+    
+      <ul class="resource-list">
+        
+          
+            
+
+
+
+<li class="resource-item" data-id="eb2fffa5-674d-400f-8abf-88e996ba1fab">
+  
+    
+    <a class="heading resource-url-analytics" href="/dataset/fire-incident-locations-historical/resource/eb2fffa5-674d-400f-8abf-88e996ba1fab" title="WMS getCapabilities request">
+    
+      WMS getCapabilities request<span class="format-label" property="dc:format" data-format="wms">wms</span>
+      
+
+    </a>
+  
+
+  
+    <p class="size">
+      
+    </p>
+  
+
+  <p class="description">
+    
+      For use in viewers such as ESRI tools use this truncated link:...
+    
+  </p>
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share icon-share-alt"></i>
+      Explore
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/fire-incident-locations-historical/resource/eb2fffa5-674d-400f-8abf-88e996ba1fab">
+          
+            <i class="fa fa-bar-chart icon-bar-chart"></i>
+            Preview
+          
+        </a>
+      </li>
+      
+      <li>
+        
+          <a href="https://openmaps.gov.bc.ca/geo/pub/WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP/ows?service=WMS&amp;request=GetCapabilities" class="resource-url-analytics" target="_blank">
+            <i class="fa fa-download icon-download"></i>
+            Download
+        
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+
+<li class="resource-item" data-id="012b8c1d-a47b-46f3-b985-f9d66ae73c3b">
+  
+    
+    <a class="heading resource-url-analytics" href="/dataset/fire-incident-locations-historical/resource/012b8c1d-a47b-46f3-b985-f9d66ae73c3b" title="KML Network Link">
+    
+      KML Network Link<span class="format-label" property="dc:format" data-format="kml">kml</span>
+      
+
+    </a>
+  
+
+  
+    <p class="size">
+      
+    </p>
+  
+
+  <p class="description">
+    
+      For use in viewers such as Google Earth  Click here for information on how to...
+    
+  </p>
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share icon-share-alt"></i>
+      Explore
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/fire-incident-locations-historical/resource/012b8c1d-a47b-46f3-b985-f9d66ae73c3b">
+          
+            <i class="fa fa-info-circle icon-info-sign"></i>
+            More information
+          
+        </a>
+      </li>
+      
+      <li>
+        
+          <a href="http://openmaps.gov.bc.ca/kml/geo/layers/WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP_loader.kml" class="resource-url-analytics" target="_blank">
+            <i class="fa fa-external-link icon-external-link"></i>
+            Access / Download
+        
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+            
+
+
+
+<li class="resource-item" data-id="6db589c4-e45e-4ae9-a7b5-775cbfec6037">
+  
+    
+    <a class="heading resource-url-analytics" href="/dataset/fire-incident-locations-historical/resource/6db589c4-e45e-4ae9-a7b5-775cbfec6037" title="BC Geographic Warehouse Custom Download">
+    
+      BC Geographic Warehouse Custom Download<span class="format-label" property="dc:format" data-format="other">other</span>
+      
+
+    </a>
+  
+
+  
+    
+    
+  
+
+  <p class="description">
+    
+  </p>
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-share icon-share-alt"></i>
+      Explore
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="/dataset/fire-incident-locations-historical/resource/6db589c4-e45e-4ae9-a7b5-775cbfec6037">
+          
+            <i class="fa fa-info-circle icon-info-sign"></i>
+            More information
+          
+        </a>
+      </li>
+      
+      <li>
+        
+          
+            <a href="#edc-pow" role="button" id="other" class="edc-pow-button">
+          
+            <i class="fa fa-external-link icon-external-link"></i>
+            Access / Download
+        
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+          
+        
+      </ul>
+        
+          <div class="hide"
+            data-module="edc_pow"
+            data-module-env="prod"
+            data-module-pkg="{&#34;sector&#34;: &#34;Natural Resources&#34;, &#34;preview_zoom_level&#34;: &#34;13&#34;, &#34;maintainer&#34;: null, &#34;west_bound_longitude&#34;: &#34;-139.5&#34;, &#34;iso_topic_string&#34;: &#34;imageryBaseMapsEarthCover&#34;, &#34;view_audience&#34;: &#34;Public&#34;, &#34;private&#34;: false, &#34;maintainer_email&#34;: null, &#34;num_tags&#34;: 6, &#34;license_url&#34;: &#34;https://www2.gov.bc.ca/gov/content?id=A519A56BC2BF44E4A008B33FCF527F61&#34;, &#34;metadata_language&#34;: &#34;English&#34;, &#34;license_title&#34;: &#34;Open Government Licence - British Columbia&#34;, &#34;org&#34;: &#34;3275286d-4ec9-422a-817f-ab0e232eddfe&#34;, &#34;east_bound_longitude&#34;: &#34;-113.5&#34;, &#34;license_id&#34;: &#34;2&#34;, &#34;id&#34;: &#34;e2dadc60-292f-4d98-b42b-56ca9e4fe694&#34;, &#34;link_to_imap&#34;: &#34;http://maps.gov.bc.ca/ess/hm/imap4m/?catalogLayers=1754,1755&amp;scale=200000.0&amp;center=-13574076.0678,6353791.1031&#34;, &#34;north_bound_latitude&#34;: &#34;60.0&#34;, &#34;odsi_uid&#34;: &#34;173592&#34;, &#34;metadata_modified&#34;: &#34;2019-01-25T23:37:29.057648&#34;, &#34;author&#34;: &#34;d0716cb8-7eb5-4d43-9f57-6022096fd79f&#34;, &#34;author_email&#34;: null, &#34;lineage_statement&#34;: &#34;&#34;, &#34;preview_map_service_url&#34;: &#34;https://openmaps.gov.bc.ca/geo/pub/WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP/ows?&#34;, &#34;preview_latitude&#34;: &#34;49.463&#34;, &#34;object_name&#34;: &#34;WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP&#34;, &#34;state&#34;: &#34;active&#34;, &#34;version&#34;: null, &#34;details&#34;: [{&#34;data_precision&#34;: &#34;6&#34;, &#34;column_comments&#34;: &#34;FIRE_NUMBER is a composite of the following fields: Zone, Fire ID and Fire Centre.&#34;, &#34;data_type&#34;: &#34;VARCHAR2&#34;, &#34;short_name&#34;: &#34;FIRE_NO&#34;, &#34;column_name&#34;: &#34;FIRE_NUMBER&#34;}, {&#34;data_precision&#34;: &#34;4&#34;, &#34;column_comments&#34;: &#34;FIRE_YEAR represents the fiscal year, April 1 to March 31.&#34;, &#34;data_type&#34;: &#34;NUMBER&#34;, &#34;short_name&#34;: &#34;FIRE_YEAR&#34;, &#34;column_name&#34;: &#34;FIRE_YEAR&#34;}, {&#34;data_precision&#34;: &#34;7&#34;, &#34;column_comments&#34;: &#34;IGNITION_DATE is the discovery date of the fire.&#34;, &#34;data_type&#34;: &#34;DATE&#34;, &#34;short_name&#34;: &#34;IGN_DATE&#34;, &#34;column_name&#34;: &#34;IGNITION_DATE&#34;}, {&#34;data_precision&#34;: &#34;20&#34;, &#34;column_comments&#34;: &#34;FIRE_CAUSE is the suspected cause of the fire, e.g., Lightning, Person.&#34;, &#34;data_type&#34;: &#34;VARCHAR2&#34;, &#34;short_name&#34;: &#34;FIRE_CAUSE&#34;, &#34;column_name&#34;: &#34;FIRE_CAUSE&#34;}, {&#34;data_precision&#34;: &#34;16&#34;, &#34;column_comments&#34;: &#34;FIRE_LABEL is the concatenation of Fire Number and Fire Year.&#34;, &#34;data_type&#34;: &#34;VARCHAR2&#34;, &#34;short_name&#34;: &#34;FIRELABEL&#34;, &#34;column_name&#34;: &#34;FIRE_LABEL&#34;}, {&#34;data_precision&#34;: &#34;10&#34;, &#34;column_comments&#34;: &#34;FIRE_CENTRE represents the BC Wildfire Service Centre administrative area.&#34;, &#34;data_type&#34;: &#34;NUMBER&#34;, &#34;short_name&#34;: &#34;FRCNTR&#34;, &#34;column_name&#34;: &#34;FIRE_CENTRE&#34;}, {&#34;data_precision&#34;: &#34;10&#34;, &#34;column_comments&#34;: &#34;ZONE is a subset of the BC Wildfire Service Centre administrative area.&#34;, &#34;data_type&#34;: &#34;NUMBER&#34;, &#34;short_name&#34;: &#34;ZONE&#34;, &#34;column_name&#34;: &#34;ZONE&#34;}, {&#34;data_precision&#34;: &#34;10&#34;, &#34;column_comments&#34;: &#34;FIRE_ID is a unique number, system-generated, within a fire year and fire centre.&#34;, &#34;data_type&#34;: &#34;NUMBER&#34;, &#34;short_name&#34;: &#34;FIRE_ID&#34;, &#34;column_name&#34;: &#34;FIRE_ID&#34;}, {&#34;data_precision&#34;: &#34;20&#34;, &#34;column_comments&#34;: &#34;FIRE_TYPE defines the type of incident that occured, e.g., Fire of Note, New, Modified/Monitored, Full Response.&#34;, &#34;data_type&#34;: &#34;VARCHAR2&#34;, &#34;short_name&#34;: &#34;FIRE_TYPE&#34;, &#34;column_name&#34;: &#34;FIRE_TYPE&#34;}, {&#34;data_precision&#34;: &#34;50&#34;, &#34;column_comments&#34;: &#34;GEOGRAPHIC_DESCRIPTION is a description of the approximate fire location: IC must note how far and in what direction the wildfire is in relation to a geographic reference. Note: for Railroad fires, actual railroad mileage is iuncluded as part of the geographic information, e.g., Sallus Creek, 172 mile-marker on railroad.&#34;, &#34;data_type&#34;: &#34;VARCHAR2&#34;, &#34;short_name&#34;: &#34;GEO_DESC&#34;, &#34;column_name&#34;: &#34;GEOGRAPHIC_DESCRIPTION&#34;}, {&#34;data_precision&#34;: &#34;11&#34;, &#34;column_comments&#34;: &#34;LATITUDE is the geographic coordinate, in decimal degrees (dd.dddddd), of the location of the feature as measured from the equator, e.g., 55.323653.&#34;, &#34;data_type&#34;: &#34;NUMBER&#34;, &#34;short_name&#34;: &#34;LATITUDE&#34;, &#34;column_name&#34;: &#34;LATITUDE&#34;}, {&#34;data_precision&#34;: &#34;11&#34;, &#34;column_comments&#34;: &#34;LONGITUDE is the geographic coordinate, in decimal degrees (-ddd.dddddd), of the location of the feature as measured from the prime meridian, e.g., -123.093544. &#34;, &#34;data_type&#34;: &#34;NUMBER&#34;, &#34;short_name&#34;: &#34;LONGITUDE&#34;, &#34;column_name&#34;: &#34;LONGITUDE&#34;}, {&#34;data_precision&#34;: &#34;9&#34;, &#34;column_comments&#34;: &#34;CURRENT_SIZE is the estimated size of the area within the outside perimeter of the incident, in hectares.&#34;, &#34;data_type&#34;: &#34;NUMBER&#34;, &#34;short_name&#34;: &#34;SIZE_HA&#34;, &#34;column_name&#34;: &#34;CURRENT_SIZE&#34;}, {&#34;data_precision&#34;: &#34;10&#34;, &#34;column_comments&#34;: &#34;FEATURE_CODE contains an alphanumeric value based on the Canadian Council of Surveys and Mapping\u2019s (CCSM) system for classification of geographic features, e.g., AR82000110.&#34;, &#34;data_type&#34;: &#34;VARCHAR2&#34;, &#34;short_name&#34;: &#34;FCODE&#34;, &#34;column_name&#34;: &#34;FEATURE_CODE&#34;}, {&#34;data_precision&#34;: &#34;1&#34;, &#34;column_comments&#34;: &#34;SHAPE is the column used to reference the spatial coordinates defining the feature.&#34;, &#34;data_type&#34;: &#34;SDO_GEOMETRY&#34;, &#34;short_name&#34;: &#34;SHAPE&#34;, &#34;column_name&#34;: &#34;SHAPE&#34;}, {&#34;data_precision&#34;: &#34;38&#34;, &#34;column_comments&#34;: &#34;OBJECTID is a column required by spatial layers that interact with ESRI ArcSDE. It is populated with unique values automatically by SDE.&#34;, &#34;data_type&#34;: &#34;NUMBER&#34;, &#34;short_name&#34;: &#34;OBJECTID&#34;, &#34;column_name&#34;: &#34;OBJECTID&#34;}, {&#34;data_precision&#34;: &#34;4000&#34;, &#34;column_comments&#34;: &#34;SE_ANNO_CAD_DATA is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type. &#34;, &#34;data_type&#34;: &#34;BLOB&#34;, &#34;column_name&#34;: &#34;SE_ANNO_CAD_DATA&#34;}], &#34;relationships_as_object&#34;: [], &#34;image_url&#34;: &#34;&#34;, &#34;type&#34;: &#34;Geographic&#34;, &#34;metadata_standard_version&#34;: &#34;FDIS, MSRM Profile v2.0&#34;, &#34;resources&#34;: [{&#34;cache_last_updated&#34;: null, &#34;package_id&#34;: &#34;e2dadc60-292f-4d98-b42b-56ca9e4fe694&#34;, &#34;resource_storage_access_method&#34;: &#34;Service&#34;, &#34;datastore_active&#34;: false, &#34;id&#34;: &#34;eb2fffa5-674d-400f-8abf-88e996ba1fab&#34;, &#34;size&#34;: null, &#34;format&#34;: &#34;wms&#34;, &#34;state&#34;: &#34;active&#34;, &#34;can_be_previewed&#34;: false, &#34;on_same_domain&#34;: false, &#34;edc_resource_type&#34;: &#34;Data&#34;, &#34;hash&#34;: &#34;&#34;, &#34;description&#34;: &#34;For use in viewers such as ESRI tools use this truncated link: https://openmaps.gov.bc.ca/geo/pub/WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP/ows?   \\    \\  For information on how to connect see: http://www.data.gov.bc.ca/dbc/geographic/connect/index.page&#34;, &#34;cache_url&#34;: null, &#34;projection_name&#34;: &#34;EPSG_3005 - NAD83 BC Albers&#34;, &#34;tracking_summary&#34;: {&#34;total&#34;: 80, &#34;recent&#34;: 1}, &#34;last_modified&#34;: null, &#34;url_type&#34;: null, &#34;mimetype&#34;: null, &#34;resource_storage_location&#34;: &#34;BCGW Data Store&#34;, &#34;has_views&#34;: true, &#34;name&#34;: &#34;WMS getCapabilities request&#34;, &#34;created&#34;: &#34;2015-12-14T10:57:59.542174&#34;, &#34;url&#34;: &#34;https://openmaps.gov.bc.ca/geo/pub/WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP/ows?service=WMS&amp;request=GetCapabilities&#34;, &#34;mimetype_inner&#34;: null, &#34;resource_update_cycle&#34;: &#34;monthly&#34;, &#34;position&#34;: 0, &#34;revision_id&#34;: &#34;d31adaf5-7f66-4872-bb55-5a1a1971077a&#34;, &#34;resource_type&#34;: null}, {&#34;cache_last_updated&#34;: null, &#34;package_id&#34;: &#34;e2dadc60-292f-4d98-b42b-56ca9e4fe694&#34;, &#34;resource_storage_access_method&#34;: &#34;Service&#34;, &#34;datastore_active&#34;: false, &#34;id&#34;: &#34;012b8c1d-a47b-46f3-b985-f9d66ae73c3b&#34;, &#34;size&#34;: 0, &#34;format&#34;: &#34;kml&#34;, &#34;state&#34;: &#34;active&#34;, &#34;can_be_previewed&#34;: false, &#34;on_same_domain&#34;: false, &#34;edc_resource_type&#34;: &#34;Data&#34;, &#34;hash&#34;: &#34;&#34;, &#34;description&#34;: &#34;For use in viewers such as Google Earth &lt;BR&gt; [Click here for information on how to connect](http://www2.gov.bc.ca/gov/content/data/geographic-data-services/web-based-mapping/map-services)&#34;, &#34;cache_url&#34;: null, &#34;projection_name&#34;: &#34;EPSG_4326 - WGS84 - World Geodetic System 1984&#34;, &#34;tracking_summary&#34;: {&#34;total&#34;: 90, &#34;recent&#34;: 4}, &#34;last_modified&#34;: null, &#34;url_type&#34;: null, &#34;mimetype&#34;: null, &#34;resource_storage_location&#34;: &#34;BCGW Data Store&#34;, &#34;has_views&#34;: false, &#34;name&#34;: &#34;KML Network Link&#34;, &#34;created&#34;: &#34;2017-09-05T16:46:05.153689&#34;, &#34;url&#34;: &#34;http://openmaps.gov.bc.ca/kml/geo/layers/WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP_loader.kml&#34;, &#34;mimetype_inner&#34;: null, &#34;resource_update_cycle&#34;: &#34;monthly&#34;, &#34;position&#34;: 1, &#34;revision_id&#34;: &#34;73798259-e95c-4d6d-b4fb-96181ba62a27&#34;, &#34;resource_type&#34;: null}, {&#34;cache_last_updated&#34;: null, &#34;data_collection_start_date&#34;: &#34;&#34;, &#34;package_id&#34;: &#34;e2dadc60-292f-4d98-b42b-56ca9e4fe694&#34;, &#34;resource_storage_access_method&#34;: &#34;Indirect Access&#34;, &#34;datastore_active&#34;: false, &#34;id&#34;: &#34;6db589c4-e45e-4ae9-a7b5-775cbfec6037&#34;, &#34;size&#34;: null, &#34;format&#34;: &#34;other&#34;, &#34;state&#34;: &#34;active&#34;, &#34;can_be_previewed&#34;: false, &#34;on_same_domain&#34;: true, &#34;edc_resource_type&#34;: &#34;Data&#34;, &#34;hash&#34;: &#34;&#34;, &#34;description&#34;: &#34;&#34;, &#34;cache_url&#34;: null, &#34;projection_name&#34;: &#34;EPSG_3005 - NAD83 BC Albers&#34;, &#34;tracking_summary&#34;: {&#34;total&#34;: 0, &#34;recent&#34;: 0}, &#34;mimetype_inner&#34;: null, &#34;url_type&#34;: null, &#34;data_collection_end_date&#34;: &#34;&#34;, &#34;mimetype&#34;: null, &#34;resource_storage_location&#34;: &#34;BC Geographic Warehouse&#34;, &#34;has_views&#34;: false, &#34;name&#34;: &#34;BC Geographic Warehouse Custom Download&#34;, &#34;created&#34;: &#34;2019-01-25T23:37:27.590104&#34;, &#34;url&#34;: &#34;https://catalogue.data.gov.bc.ca/api/ofi/other/WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP&#34;, &#34;ofi&#34;: true, &#34;last_modified&#34;: null, &#34;supplemental_info&#34;: &#34;&#34;, &#34;resource_update_cycle&#34;: &#34;monthly&#34;, &#34;position&#34;: 2, &#34;revision_id&#34;: &#34;3e5ee84a-7348-4e6a-8a0a-35d7583cbbb9&#34;, &#34;resource_type&#34;: null}], &#34;more_info&#34;: [{&#34;link&#34;: &#34;&#34;, &#34;delete&#34;: &#34;0&#34;}], &#34;image_display_url&#34;: &#34;&#34;, &#34;num_resources&#34;: 3, &#34;object_short_name&#34;: &#34;H_FIRE_PNT&#34;, &#34;metadata_created&#34;: &#34;2014-12-10T23:45:35.184032&#34;, &#34;metadata_standard_name&#34;: &#34;ISO 19115, MSRM Profile v2.0&#34;, &#34;retention_expiry_date&#34;: &#34;&#34;, &#34;spatial&#34;: &#34;{\&#34;type\&#34;: \&#34;Polygon\&#34;, \&#34;coordinates\&#34;: [[[-139.5, 48.0], [-139.5, 60.0], [-113.5, 60.0], [-113.5, 48.0], [-139.5, 48.0]]]}&#34;, &#34;contacts&#34;: [{&#34;name&#34;: &#34;Devona Hay&#34;, &#34;private&#34;: &#34;Display&#34;, &#34;role&#34;: &#34;pointOfContact&#34;, &#34;branch&#34;: &#34;9165d2c2-37f8-4750-a980-8d735bcd091b&#34;, &#34;organization&#34;: &#34;3275286d-4ec9-422a-817f-ab0e232eddfe&#34;, &#34;email&#34;: &#34;BCWILDFIREGEO@gov.bc.ca&#34;, &#34;delete&#34;: &#34;0&#34;}], &#34;resource_status&#34;: &#34;onGoing&#34;, &#34;south_bound_latitude&#34;: &#34;48.0&#34;, &#34;tracking_summary&#34;: {&#34;total&#34;: 3060, &#34;recent&#34;: 61}, &#34;record_archive_date&#34;: &#34;&#34;, &#34;layer_name&#34;: &#34;WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP&#34;, &#34;groups&#34;: [], &#34;creator_user_id&#34;: &#34;d0716cb8-7eb5-4d43-9f57-6022096fd79f&#34;, &#34;download_audience&#34;: &#34;Public&#34;, &#34;preview_image_url&#34;: &#34;&#34;, &#34;replacement_record&#34;: &#34;&#34;, &#34;object_table_comments&#34;: &#34;PROT_HISTORICAL_INCIDENTS_SP contains the coordinate locations of historical (not current/active) fire incidents. The data contains the spatial representation of the location coordinate point where the incident occured, zone information, and a geographic description.&#34;, &#34;relationships_as_subject&#34;: [], &#34;tags&#34;: [{&#34;vocabulary_id&#34;: null, &#34;state&#34;: &#34;active&#34;, &#34;display_name&#34;: &#34;emergency management&#34;, &#34;id&#34;: &#34;9234a05e-94fa-414c-bf3f-72ac0b61e9a4&#34;, &#34;name&#34;: &#34;emergency management&#34;}, {&#34;vocabulary_id&#34;: null, &#34;state&#34;: &#34;active&#34;, &#34;display_name&#34;: &#34;fire location&#34;, &#34;id&#34;: &#34;ade02279-cb6c-429f-ab8f-d06e47450754&#34;, &#34;name&#34;: &#34;fire location&#34;}, {&#34;vocabulary_id&#34;: null, &#34;state&#34;: &#34;active&#34;, &#34;display_name&#34;: &#34;fire point&#34;, &#34;id&#34;: &#34;dced5ae6-800d-41eb-bff8-fb3300e4f433&#34;, &#34;name&#34;: &#34;fire point&#34;}, {&#34;vocabulary_id&#34;: null, &#34;state&#34;: &#34;active&#34;, &#34;display_name&#34;: &#34;incident location&#34;, &#34;id&#34;: &#34;7067c88a-493d-4031-8429-3bf43c01cfac&#34;, &#34;name&#34;: &#34;incident location&#34;}, {&#34;vocabulary_id&#34;: null, &#34;state&#34;: &#34;active&#34;, &#34;display_name&#34;: &#34;incident points&#34;, &#34;id&#34;: &#34;f072fa21-8608-4897-a056-1cd13d4e05c0&#34;, &#34;name&#34;: &#34;incident points&#34;}, {&#34;vocabulary_id&#34;: null, &#34;state&#34;: &#34;active&#34;, &#34;display_name&#34;: &#34;wildfire&#34;, &#34;id&#34;: &#34;5bd16878-e574-4151-afd3-c29382e4a02c&#34;, &#34;name&#34;: &#34;wildfire&#34;}], &#34;name&#34;: &#34;fire-incident-locations-historical&#34;, &#34;metadata_character_set&#34;: &#34;utf8&#34;, &#34;security_class&#34;: &#34;LOW-PUBLIC&#34;, &#34;dates&#34;: [{&#34;date&#34;: &#34;2009-07-31&#34;, &#34;type&#34;: &#34;Created&#34;}], &#34;organization&#34;: {&#34;description&#34;: &#34;The BC Wildfire Service is internationally recognised as a leader in wildfire management and is known for its skilled and committed personnel, uncompromising safety attitude, and innovative use of technology.\r\n\r\nBritish Columbia\u2019s forests and wildland cover over 94 million hectares (nearly a million square kilometres) and are the most diverse in Canada. Confronted by an average of 2,000 wildfires each year, highly trained fire crews are successful in containing 94 percent of all wildfires (rank 1-4) in B.C. by 10am the following day.&#34;, &#34;created&#34;: &#34;2014-12-10T15:05:08.060894&#34;, &#34;title&#34;: &#34;BC Wildfire Service&#34;, &#34;name&#34;: &#34;bc-wildfire-service&#34;, &#34;is_organization&#34;: true, &#34;state&#34;: &#34;active&#34;, &#34;image_url&#34;: &#34;2018-11-15-232726.848492bcws.png&#34;, &#34;revision_id&#34;: &#34;eab2093d-3df2-433b-80d1-2ea843789fd6&#34;, &#34;type&#34;: &#34;organization&#34;, &#34;id&#34;: &#34;9165d2c2-37f8-4750-a980-8d735bcd091b&#34;, &#34;approval_status&#34;: &#34;approved&#34;}, &#34;record_publish_date&#34;: &#34;2011-03-09&#34;, &#34;isopen&#34;: false, &#34;preview_longitude&#34;: &#34;-121.93799999&#34;, &#34;url&#34;: null, &#34;source_data_path&#34;: &#34;&#34;, &#34;notes&#34;: &#34;Wildfire historic incident point locations for all fire seasons before the current season.  Supplied through various sources.  Not to be used for legal purposes.  This data includes all incidents tracked by BC Wildfire Service, ie. actual fires, suspected fires, nusiance fires, smoke chases, etc.  On April 1 of each year this layer is updated with the previous fire season&#39;s data&#34;, &#34;owner_org&#34;: &#34;9165d2c2-37f8-4750-a980-8d735bcd091b&#34;, &#34;edc_state&#34;: &#34;PUBLISHED&#34;, &#34;record_last_modified&#34;: &#34;2019-01-25&#34;, &#34;metastar_uid&#34;: &#34;57061&#34;, &#34;data_quality&#34;: &#34;&#34;, &#34;metadata_visibility&#34;: &#34;Public&#34;, &#34;title&#34;: &#34;Fire Incident Locations - Historical&#34;, &#34;revision_id&#34;: &#34;ce93956e-fc12-494f-8ab7-c4ae516293c7&#34;, &#34;record_create_date&#34;: &#34;2009-09-16&#34;, &#34;sub_org&#34;: &#34;9165d2c2-37f8-4750-a980-8d735bcd091b&#34;, &#34;purpose&#34;: &#34;This data can be used for visual or analytical purposes.  Not to be used for legal purposes.&#34;}"
+            data-module-secure_site="False"
+            data-module-past_orders_nbr="5"
+            data-module-custom_aoi_url="http://maps.gov.bc.ca/ess/hm/aoi/"
+            data-module-persist_config="true"
+            data-module-use_pow_ui=""
+            data-module-order_source="bcdc"
+
+            
+            data-module-ofi_public_url="https://apps.gov.bc.ca/pub/dwds-ofi"
+            data-module-ofi_secure_url="https://apps.gov.bc.ca/pub/dwds-ofi/secure"
+
+            
+            data-module-pow_public_url="https://apps.gov.bc.ca/pub/dwds-ofi"
+            data-module-pow_secure_url="https://apps.gov.bc.ca/ext/dwds-pow"
+            data-module-ofi_pow_ui_path="/jsp/dwds_pow_current_order.jsp?"
+
+            
+            data-module-aoi_type="0"
+            data-module-aoi=""
+            data-module-clipping_method_type_id="1"
+            data-module-ordering_application="BCDC"
+            data-module-format_type="3"
+            data-module-csr_type="4"
+            data-module-metadata_url="https://catalogue.data.gov.bc.ca/dataset/"
+            >
+          </div>
+
+          
+        
+      
+  
+</section>
+  
+
+  
+    
+  
+
+  
+  	
+
+
+
+<div class="module-content ckanext-datapreview">
+  <div class="row">
+    
+    <div class="col-md-9">
+    
+    
+      
+      	
+        	
+      		
+      		
+      			<iframe src="//apps.gov.bc.ca/pub/dmf-viewer/?siteid=7535188336326689232&amp;maponly&amp;wmsservices=https://openmaps.gov.bc.ca/geo/pub/WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP/ows?&amp;wmslayers=WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP&amp;ll=49.463,-121.93799999&amp;z=13" frameborder="0" width="100%" data-module="data-viewer" height="400px"></iframe>
+       	
+      
+    </div>
+    
+    <div class="col-md-3">
+      <div class="extent">
+        <h4>Dataset Extent</h4>
+        <table class="table extent-table">
+          <tr>
+            <td>Latitude: </td> <td>48.0&deg; to 60.0&deg;</td>
+          </tr>
+          <tr>
+            <td>Longitude: </td><td>-139.5&deg; to -113.5&deg;</td>
+          </tr>
+        </table>
+      </div>
+       
+       <div class="imap">
+           <a href="http://maps.gov.bc.ca/ess/hm/imap4m/?catalogLayers=1754,1755&amp;scale=200000.0&amp;center=-13574076.0678,6353791.1031" target="_blank" class="btn btn-primary"><i class="fa fa-map-marker icon-map-marker"></i> View in iMapBC</a>
+       </div>
+      
+    </div>
+    
+  </div>
+      
+</div>
+  
+
+  
+      <h3>Additional Information</h3>
+  <div id="additional-information">
+    
+      
+        <table class="table dataset_view">
+          
+            <tr>
+              <td width="150px"><strong>Purpose</strong></td>
+              <td><p>This data can be used for visual or analytical purposes.  Not to be used for legal purposes.</p></td>
+            </tr>
+          
+
+          
+           <tr>
+              <td width="150px"><strong>Data Quality</strong></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td><strong>Lineage Statement</strong></td>
+              <td></td>
+            </tr>
+          
+        </table>
+      
+    
+
+    
+      
+  
+
+
+
+    
+
+    
+    
+      
+        
+      
+      
+
+<h2 class="view-group">Contact Information</h2>
+
+
+	
+	
+	
+		
+        
+		<table class="table dataset_view">
+			<tr>
+				<td><strong>Name</strong></td><td>Devona Hay (pointOfContact)</td>
+			</tr>
+			<tr>
+				<td><strong>Email</strong></td><td><a href="mailto:BCWILDFIREGEO@gov.bc.ca" title="Send an email to Devona Hay">BCWILDFIREGEO@gov.bc.ca<a/></td>
+			</tr>
+			<tr>
+				<td><strong>Organization</strong></td><td>Ministry of Forests, Lands, Natural Resource Operations and Rural Development</td>
+			</tr>
+            
+            <tr>
+                <td><strong>Sub-Organization</strong></td><td>BC Wildfire Service</td>
+            </tr>
+            
+		</table>
+	
+
+
+
+    
+
+    
+      
+<h2 class="view-group">Access & Security</h2>
+<table class="table dataset_view">
+    
+	
+    <tr>
+        <td>
+            <strong>
+                
+                
+                    Who can view this dataset?
+                
+            </strong>
+        </td>
+        <td>Public</td>
+    </tr>
+    
+	
+        
+        
+        <tr>
+            <td><strong>Who can download this dataset?</strong></td><td>Public</td>
+        </tr>
+        
+    
+    
+</table>
+    
+  <h2>Metadata Information</h2>
+  <table class="table dataset_view">
+
+  
+  
+  
+
+  
+  
+
+  
+  
+      
+
+
+
+
+	<tr>
+		<td><strong> Record Published </strong></td><td> 2011-03-09 </td>
+	</tr>
+
+<tr>
+	<td><strong> Record Last Modified </strong></td><td> 2019-01-25 </td>
+</tr>
+  
+
+  
+    
+      <tr>
+        <td><strong>Resource Status</strong></td><td> onGoing </td>
+      </tr>
+      
+    
+    
+  
+
+  
+    
+
+
+  
+
+  </table>
+</div>
+  
+
+  
+        
+
+      
+      
+      
+      
+
+      
+        <h3>Object Description</h3>
+        <div id="object-description">
+          
+          <p><strong>Object Name: WHSE_LAND_AND_NATURAL_RESOURCE.PROT_HISTORICAL_INCIDENTS_SP</strong></p>
+          
+          <p>
+            
+            <strong>Short Name</strong>: H_FIRE_PNT<br/>
+            
+
+            
+            <strong>Comments</strong>: PROT_HISTORICAL_INCIDENTS_SP contains the coordinate locations of historical (not current/active) fire incidents. The data contains the spatial representation of the location coordinate point where the incident occured, zone information, and a geographic description.
+            
+          </p>
+          
+          <table class="table details">
+            <thead>
+              <tr>
+                <th class="column-name">Column Name</th>
+                <th class="short-name">Short Name</th>
+                <th class="data-type">Data Type</th>
+                <th class="data-precision">Data Precision</th>
+                <th class="data-comments">Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td class="column-name">FIRE_NUMBER</td>
+                <td class="short-name">FIRE_NO</td>
+                <td class="data-type">VARCHAR2</td>
+                <td class="data-precision">6</td>
+                <td class="data-comments">FIRE_NUMBER is a composite of the following fields: Zone, Fire ID and Fire Centre.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">FIRE_YEAR</td>
+                <td class="short-name">FIRE_YEAR</td>
+                <td class="data-type">NUMBER</td>
+                <td class="data-precision">4</td>
+                <td class="data-comments">FIRE_YEAR represents the fiscal year, April 1 to March 31.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">IGNITION_DATE</td>
+                <td class="short-name">IGN_DATE</td>
+                <td class="data-type">DATE</td>
+                <td class="data-precision">7</td>
+                <td class="data-comments">IGNITION_DATE is the discovery date of the fire.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">FIRE_CAUSE</td>
+                <td class="short-name">FIRE_CAUSE</td>
+                <td class="data-type">VARCHAR2</td>
+                <td class="data-precision">20</td>
+                <td class="data-comments">FIRE_CAUSE is the suspected cause of the fire, e.g., Lightning, Person.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">FIRE_LABEL</td>
+                <td class="short-name">FIRELABEL</td>
+                <td class="data-type">VARCHAR2</td>
+                <td class="data-precision">16</td>
+                <td class="data-comments">FIRE_LABEL is the concatenation of Fire Number and Fire Year.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">FIRE_CENTRE</td>
+                <td class="short-name">FRCNTR</td>
+                <td class="data-type">NUMBER</td>
+                <td class="data-precision">10</td>
+                <td class="data-comments">FIRE_CENTRE represents the BC Wildfire Service Centre administrative area.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">ZONE</td>
+                <td class="short-name">ZONE</td>
+                <td class="data-type">NUMBER</td>
+                <td class="data-precision">10</td>
+                <td class="data-comments">ZONE is a subset of the BC Wildfire Service Centre administrative area.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">FIRE_ID</td>
+                <td class="short-name">FIRE_ID</td>
+                <td class="data-type">NUMBER</td>
+                <td class="data-precision">10</td>
+                <td class="data-comments">FIRE_ID is a unique number, system-generated, within a fire year and fire centre.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">FIRE_TYPE</td>
+                <td class="short-name">FIRE_TYPE</td>
+                <td class="data-type">VARCHAR2</td>
+                <td class="data-precision">20</td>
+                <td class="data-comments">FIRE_TYPE defines the type of incident that occured, e.g., Fire of Note, New, Modified/Monitored, Full Response.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">GEOGRAPHIC_DESCRIPTION</td>
+                <td class="short-name">GEO_DESC</td>
+                <td class="data-type">VARCHAR2</td>
+                <td class="data-precision">50</td>
+                <td class="data-comments">GEOGRAPHIC_DESCRIPTION is a description of the approximate fire location: IC must note how far and in what direction the wildfire is in relation to a geographic reference. Note: for Railroad fires, actual railroad mileage is iuncluded as part of the geographic information, e.g., Sallus Creek, 172 mile-marker on railroad.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">LATITUDE</td>
+                <td class="short-name">LATITUDE</td>
+                <td class="data-type">NUMBER</td>
+                <td class="data-precision">11</td>
+                <td class="data-comments">LATITUDE is the geographic coordinate, in decimal degrees (dd.dddddd), of the location of the feature as measured from the equator, e.g., 55.323653.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">LONGITUDE</td>
+                <td class="short-name">LONGITUDE</td>
+                <td class="data-type">NUMBER</td>
+                <td class="data-precision">11</td>
+                <td class="data-comments">LONGITUDE is the geographic coordinate, in decimal degrees (-ddd.dddddd), of the location of the feature as measured from the prime meridian, e.g., -123.093544. </td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">CURRENT_SIZE</td>
+                <td class="short-name">SIZE_HA</td>
+                <td class="data-type">NUMBER</td>
+                <td class="data-precision">9</td>
+                <td class="data-comments">CURRENT_SIZE is the estimated size of the area within the outside perimeter of the incident, in hectares.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">FEATURE_CODE</td>
+                <td class="short-name">FCODE</td>
+                <td class="data-type">VARCHAR2</td>
+                <td class="data-precision">10</td>
+                <td class="data-comments">FEATURE_CODE contains an alphanumeric value based on the Canadian Council of Surveys and Mapping’s (CCSM) system for classification of geographic features, e.g., AR82000110.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">SHAPE</td>
+                <td class="short-name">SHAPE</td>
+                <td class="data-type">SDO_GEOMETRY</td>
+                <td class="data-precision">1</td>
+                <td class="data-comments">SHAPE is the column used to reference the spatial coordinates defining the feature.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">OBJECTID</td>
+                <td class="short-name">OBJECTID</td>
+                <td class="data-type">NUMBER</td>
+                <td class="data-precision">38</td>
+                <td class="data-comments">OBJECTID is a column required by spatial layers that interact with ESRI ArcSDE. It is populated with unique values automatically by SDE.</td>
+              </tr>
+              
+              <tr>
+                <td class="column-name">SE_ANNO_CAD_DATA</td>
+                <td class="short-name"></td>
+                <td class="data-type">BLOB</td>
+                <td class="data-precision">4000</td>
+                <td class="data-comments">SE_ANNO_CAD_DATA is a binary column used by spatial tools to store annotation, curve features and CAD data when using the SDO_GEOMETRY storage data type. </td>
+              </tr>
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    
+
+  
+      
+          <div class="module-content disqus-comments">
+  <h3>Comments</h3>
+  <div id="disqus_messages" style="display: none;"></div>
+  <div id="disqus_num_comments"></div>
+  <div id="disqus_add_comment" style="display: none;">
+    <div class="user-avatar"><img src="//a.disquscdn.com/uploads/users/9087/2489/avatar92.jpg?1389868656"></div>
+    <div id="comment_box">
+        <form id="add_comment_form">
+            <textarea name="message" class="message" placeholder="Add a comment"></textarea>
+            <div class="author_information">
+              <input type="text" class="author_name" name="author_name" placeholder="Name" />
+              <input type="email" class="author_email" name="author_email" placeholder="Email" />
+              <input type="submit" class="btn btn-primary btn-xs pull-right" value="Post comment" />
+              <div class="errors" style="display: none;"></div>
+            </div>
+        </form>
+    </div>
+  </div>
+  <div id="disqus_thread">
+    <div class="loader"><img src="https://catalogue.data.gov.bc.ca/loader.gif" /></div>
+    <div style="display: none;">
+    <div class="empty">No comments have been posted yet.</div>
+    <div class="post">
+      <div class="post-content">
+        <div class="post-avatar"><img src="//a.disquscdn.com/uploads/users/9087/2489/avatar92.jpg?1389868656"></div>
+        <div class="post-header">
+            <span class="post-author"></span> <span class="bullet">&bull;</span> <span class="post-time"></span>
+        </div>
+        <div class="post-body">
+            <p></p>
+        </div>
+      </div>
+      <div class="post-menu">
+        <ul>
+          <li><a href="#" class="post-menu-reply">Reply</a></li>
+          <li style="display: none;"><a href="#" class="post-menu-collapse">Collapse</a></li>
+        </ul>
+      </div>
+      <div class="form-errors">
+      </div>
+      <div class="post-reply-form">
+      </div>
+      <div class="post-replies">
+      </div>
+    </div>
+    </div>
+  </div>
+  <div id="disqus-brand">
+    <a href="http://disqus.com"><img src="//a.disquscdn.com/dotcom/d-e357401/img/brand/disqus-social-icon-dark-transparent.png"></a>
+  </div>
+  <script type="text/javascript">
+    var disqus_identifier = 'e2dadc60-292f-4d98-b42b-56ca9e4fe694';
+    var site_url = 'https://catalogue.data.gov.bc.ca';
+  </script>
+  
+  
+  
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="comment-terms-modal" tabindex="-1" role="dialog" aria-labelledby="comment-terms-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="comment-terms-modal-label">Terms of Use</h4>
+      </div>
+      <div class="modal-body">
+          <p><strong>I consent effective immediately to the disclosure of my personal information to Disqus and to the Province of British Columbia, and I  agree to the Terms of Use and Moderation Policies below.</strong></p>
+
+          <p><strong>Collection of Personal Information</strong>: Your personal information is collected under section 26(c) of the Freedom of Information and Protection of Privacy Act for the purposes of facilitating discussion with other users and to help us improve the Provinces' DataBC program. If you have questions about the collection of your personal information, please contact David Wrate, Director, Citizen Engagement, Strategic Initiatives Division, Government Communications and Public Engagement; by mail: PO Box 9439, STN Prov Gov, Victoria, BC, V8W 9V3 by phone: 250-588-9231 or e-mail: <a href="mailto:data@gov.bc.ca">data@gov.bc.ca</a>.</p>
+          <p>DataBC uses the “Disqus” service to facilitate its comment forum. Disqus collects and stores your name, email address, comments, IP address and possibly other information on servers outside of Canada and to Disqus and on this website.</p>
+          <h2>Terms of Use</h2>
+          <p>These Terms of Use constitute an agreement between you and the Province of British Columbia, represented by the Minister of Technology Innovation and Citizens Services (the "Province") with respect to your use of the Dataset Review (as defined below). By accepting these Terms of Use, you are deemed to have read and agreed to the terms and conditions set out below.</p>
+          The DataBC Dataset Review (the "Review") is a public forum that welcomes candid dialogue and diverse views about The Provinces' data presented by the DataBC program.</p>
+          <p>To contribute to the Review, you must be either of the age of majority or have obtained legal parental or guardian consent, in which case your legal parent or guardian will be responsible for your use of the Review.</p>
+          <p><strong>Submission and Review of Content</strong>: Questions, comments, ideas and other contributions to the Review (collectively, the "Content") will be screened before they are published and we hope the Review will be self-governing. We are confident that contributors will not submit Content that offends any law or includes information about other people.</p>
+          <p>The Province reserves the right to edit or delete Content for any reason to ensure that all Content is reasonable and appropriate. In particular, defamatory, indecent, obscene, illegal, immoral and sexually explicit Content will be removed. We will also remove: (a) Content that potentially or actually infringes any third party's copyright, trademark, right of privacy, publicity or any other intellectual property or other right; and (b) Content containing information about other identifiable individuals, including their names, email addresses, images of them or comments about them. If you are concerned about inappropriate content please e-mail data@gov.bc.ca, citing the date and author of the Content in question.</p>
+          <p><strong>Ownership and License</strong>: You retain ownership of all Content you submit to the Review ("Your Content"). You represent and warrant that: (a) Your Content is your original work, or has been provided to you or obtained by you from the rightful owner with all necessary permissions; and (b) Your Content does not infringe on the copyrights, trademarks, rights of privacy, publicity or other intellectual property or other rights of any person or entity.</p>
+          <p>By submitting Your Content to the Review, and in consideration of the opportunity to participate in the Review and other valuable consideration (the receipt and sufficiency of which you hereby acknowledge), you grant to the Province a non-exclusive, perpetual, royalty-free, worldwide license to use, reproduce, publish, communicate to the public by telecommunication, modify, display and distribute Your Content in any and all formats for any and all purposes associated with the Review. You agree that the Province may engage independent contractors and service providers to assist the Province to exercise the rights you grant to the Province under these Terms of Use.</p>
+          <p>You agree that the Province may reformat, rearrange or otherwise modify Your Content, and you understand that the Province has no obligation to acknowledge you by name or pseudonym as the author of Your Content or to ensure that you remain anonymous.</p>
+          <p>With the exception of Your Content and Content submitted to the Review by other contributors, all intellectual property in the Review, including but not limited to copyright, official marks or trademarks, is owned by the Province. Copying or unauthorized use of any such intellectual property without the express written consent of the Province is prohibited.</p>
+          <p>Use of any material from or links to third party websites must be in accordance with these Terms of Use. The Province does not control such third party websites and is not responsible for their contents. The inclusion of hyperlinks to such third party websites does not imply any endorsement of the material on such websites or any association with these third parties.</p>
+          <p><strong>Freedom of Information</strong>: Since most government information, including the contents of this Review, may be the subject of a freedom of information request, it is possible that some or all of the information you submit will be disclosed publicly under the Freedom of Information and Protection of Privacy Act ("FOIPPA"). Please consider this when commenting.</p>
+          <p><strong>Collection of Personal Information</strong>: Your name, email address and your opinions are characterized as "personal information" under FOIPPA. In order to hear your thoughts on the Provinces' DataBC program to facilitate discussion with other users, and to collect comments to help us improve the Provinces' DataBC program, we are collecting this personal information from you and we will share it with the Ministry of Labour, Citizens' Services and Open Government, which is responsible the Provinces' DataBC program for government. Your email address may be used to contact you for clarification of your comment(s), to notify you of future opportunities to participate in public consultations, and to keep you updated on the progress of the Provinces' DataBC program.  We also are collecting details of your visit to this website such as your IP address, and date and time of your visit, and your acceptance of the Terms of Use for the purpose of administering this site.
+          The authority to collect personal information comes from Section 26(c) of FOIPPA. If you have any questions about the collection of your personal information, please contact:
+        David Wrate, Director, Citizen Engagement, Business and Workforce Transformation; by mail: PO Box 9110, STN Prov Gov, Victoria, BC, by phone: 250-588-9231 or e-mail:David.Wrate@gov.bc.ca</p>
+          <p><strong>Access and Disclosure</strong>: By accepting the Terms of Use, you consent to the use of your personal information for the purposes outlined above, the public disclosure and access in or outside of Canada of your name, comments and/or opinions and any other Content submitted by you, and the date/time of your submission for the purpose of participating in the conversation on the Provinces' DataBC program. You also consent to the administrators of this Review sharing this personal information with the Ministry of Citizens' Services for the Provinces' DataBC program.</p>
+          <p><strong>Limitation of Liability and Indemnity</strong>: You agree that under no circumstances will the Province or any of its respective servants, employees or agents be liable to any person or entity for any direct, indirect, special, incidental, consequential, or other damages based on: (a) use of any of Your Content under these Terms of Use; (b) any use by you of the Review; or (c) any failure by you to abide by these Terms of Use.</p>
+          <p>You agree to indemnify, defend and hold harmless the Province and all of its respective servants, employees and agents from and against all claims, demands, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to reasonable legal fees) arising from: (a) your use of the Review; (b) your violation of any provision of these Terms of Use; (c) your violation of any third party right, including without limitation any claims or action based on infringement or violation of intellectual property rights, libel or slander or other defamation, rights of privacy or rights of publicity; and (d) any claim that any of Your Content caused damage to a third party.</p>
+          <p><strong>Additional Terms</strong>: These Terms of Use also incorporate the contents of the Copyright, Disclaimer, and Privacy notices at the bottom of the page. Please read them carefully.
+          If any term or provision of these Terms of Use is invalid, illegal or unenforceable, all other terms and provisions of these Terms of Use shall nonetheless remain in full force and effect.
+          These Terms of Use will be governed by and construed in accordance with the laws of British Columbia.</p>
+
+          <h2>Moderation Policy</h2>
+          <p>We welcome your participation in our discussion and look forward to an active exchange of ideas.
+          We want to publish your comments, but we expect conversations to follow the conventions of polite discourse.</p>
+          <p>Therefore, we won't post comments that:</p>
+          <ul>
+          <li>contain abusive, obscene, indecent or offensive language</li>
+          <li>include defamatory, abusive, harassing or hateful remarks or make unproven or unsupported accusations against</li>
+          <li>individuals or organizations</li>
+          <li>constitute spam, promote services or products</li>
+          <li>invade anyone's privacy or impersonates anyone</li>
+          <li>are far off-topic</li>
+          <li>are posted without the necessary rights, licenses and consents (see Terms of Use)</li>
+          <li>encourage conduct that may or would constitute a criminal offence or give rise to civil liability, or that otherwise violates</li>
+          <li>any local, provincial, national or international law or regulation anywhere in the world</li>
+          <li>contain long embedded URLs</li>
+          <li>contain excessive links or contain code</li>
+          <li>identify any publicly-elected representative or candidate regardless of their political affiliation, whether those comments:
+              <ul>
+                <li>are supportive or critical</li>
+                <li>are contrary to the principles of the Canadian Charter of Rights and Freedoms</li>
+              </ul>
+          </li>
+          </ul>
+          <p>We don't edit comments to remove objectionable content, so please ensure that your comment contains none of the above.</p>
+          <p>Reporters are asked to send questions through their normal channels. Questions from reporters will not be posted.</p>
+          <p>Your comments are welcome at any time - the review is available 24 hours a day, 7 days a week. However, given the need to manage provincial resources, moderating and posting of comments will generally occur during regular business hours Monday through Friday. Comments submitted after hours or on weekends will be read and posted as early as possible the next business day.</p>
+          <p>To protect your own privacy and the privacy of others, please do not include phone numbers or e-mail addresses in the body of your comment.</p>
+          <p>If you have questions about this moderation policy or how we apply it, please contact us at <a href="mailto:data@gov.bc.ca">data@gov.bc.ca</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default terms-decline" data-dismiss="modal">Decline</button>
+        <button type="button" class="btn btn-primary terms-accept" data-dismiss="modal">Accept</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
+  
+  
+
+                    </div>
+                  </article>
+                
+              </div>
+            
+
+            
+              <aside class="secondary span3">
+                
+                
+  
+    
+    
+  
+
+              </aside>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+            
+</div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="wb-foot">
+    <div id="wb-foot-in">
+      <footer>
+        
+          
+    
+
+
+
+
+    <div id="footer">
+        <img src="/assets/gov/images/back-to-top.png" alt="Back to top" title="Back to top" class="back-to-top" style="display: none;">
+        <div id="footerWrapper">
+            <div id="footerToggle">
+                <a class="footerExpand" href="http://www2.gov.bc.ca/#"><img src="/assets/gov/images/footer_expandbutton.png" alt="Expand footer" title="Expand footer"></a>
+                <a class="footerCollapse" href="http://www2.gov.bc.ca/#" style="display:none"><img src="/assets/gov/images/footer_collapsebutton.png" alt="Collapse footer" title="Collapse footer"></a>     
+            </div>
+        
+            <div id="footerCollapsible">
+        
+                <div id="footerContainer" class="container">
+                    
+                    <div id="footerMediaLinks" class="row">
+                        <div class="span12">
+                            <div class="connect">
+                                <h2 class="pull-left">Connect With Us</h2>
+                            </div>
+                            <div class="">
+                                <ul class="inline">
+                                    <li data-order="0"><a href="https://news.gov.bc.ca/" target="_blank">BC Gov News</a></li>
+                                    <li data-order="1"><a href="https://www.facebook.com/BCProvincialGovernment" target="_blank">Facebook</a></li>
+                                    <li data-order="2"><a href="https://twitter.com/BCGovNews" target="_blank">Twitter</a></li>
+                                    <li data-order="3"><a href="https://www.flickr.com/photos/bcgovphotos/" target="_blank">Photos</a></li>
+                                    <li data-order="4"><a href="https://www.youtube.com/user/ProvinceofBC" target="_blank">Videos</a></li>
+                                    <li data-order="5"><a href="https://news.gov.bc.ca/newsletters" target="_blank">Newsletters</a></li>
+                                    <li data-order="6"><a href="https://news.gov.bc.ca/connect#rss" target="_blank">RSS Feeds</a></li>
+                                </ul>
+                            </div>
+                        
+                            <hr class="span12">
+                        </div>
+                    </div>
+                
+                    <div id="footerAZLinks" class="row hidden-xs">
+                        <div class="span12">            
+                            <h2>Government A-Z</h2>
+                            <div class="row">
+                                <div class="span4">
+                                <ul class="bulleted">
+                                    <li id="replicantData_461EB6AD9D76408B82B694E9FBDEFE32" data-order="0">
+                                                <a href="http://www2.gov.bc.ca/gov/content/home/services-a-z" target="_self">Services A-Z</a>
+
+        </li>
+                                        </ul>
+                            </div>
+                            <div class="span4">
+                                <ul class="bulleted">
+                                    <li id="replicantData_F0EA3631778F4368BC0987587A9985B7" data-order="1">
+                                                <a href="http://www2.gov.bc.ca/gov/content/home/organizations-a-z" target="_self">Organizations A-Z</a>
+
+        </li>
+                                        </ul>
+                            </div>
+                            <div class="span4">
+                                <ul class="bulleted">
+                                    <li id="replicantData_4DC9D94C2FFD4FFBAEA035FE68828407" data-order="2">
+                                                <a href="http://www2.gov.bc.ca/gov/content/home/forms-a-z" target="_self">Forms A-Z</a>
+
+        </li>
+                                        </ul>
+                                
+                            </div>
+                            </div>
+                            
+                            <hr class="hidden-md hidden-lg span12">
+                        </div>
+                    </div>
+                
+                    <div id="footerThemeLinks" class="row hidden-xs">
+                        <div class="span12">
+                            <h2>Services and Information Topics</h2>
+
+                            <div class="row">
+                                
+                                <div class="span4">
+                                    <ul class="bulleted">
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/governments">British Columbians &amp; Our Governments</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/health">Health</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/life-events">Birth, Adoption, Death, Marriage &amp; Divorce</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/education-training">Education &amp; Training</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/transportation">Driving &amp; Transportation</a></li>
+                                    </ul>
+                                </div>
+                                <div class="span4">
+                                    <ul class="bulleted">
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/safety">Public Safety &amp; Emergency Services</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/justice">Law, Crime &amp; Justice</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/taxes">Taxes &amp; Tax Credits</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/housing-tenancy">Housing &amp; Tenancy</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/sports-culture">Sports, Recreation, Arts &amp; Culture</a></li>
+                                    </ul>
+                                </div>
+                                <div class="span4">
+                                    <ul class="bulleted">
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/environment">Environmental Protection &amp; Sustainability</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/industry">Farming, Natural Resources &amp; Industry</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/employment-business">Employment, Business &amp; Economic Development</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/tourism-immigration">Tourism &amp; Immigration</a></li>
+                                        <li><a href="http://www2.gov.bc.ca/gov/content/family-social-supports">Family &amp; Social Supports</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            
+                            <hr class="span12">
+                        </div>
+                    </div>  
+                    
+                </div>  
+            </div>
+        
+            <div id="footerAdminSection">
+                <div id="footerAdminLinksContainer" class="container">
+                    <div id="footerAdminLinks" class="row">
+                        <div class="span12">
+                            <ul class="inline">
+                                <li data-order="0"><a href="http://www2.gov.bc.ca/gov/content/home" target="_self">Home</a></li>              
+                                <li data-order="1"><a href="http://www2.gov.bc.ca/gov/content/about-gov-bc-ca" target="_self">About gov.bc.ca</a></li>      
+                                <li data-order="2"><a href="http://www2.gov.bc.ca/gov/content/home/disclaimer" target="_self">Disclaimer</a></li>
+                                <li data-order="3"><a href="http://www2.gov.bc.ca/gov/content/home/privacy" target="_self">Privacy</a></li>
+                                <li data-order="5"><a href="#tracking-modal" data-toggle="modal">Tracking</a></li>
+                                <li data-order="6"><a href="http://www2.gov.bc.ca/gov/content/home/accessibility" target="_self">Accessibility</a></li>
+                                <li data-order="7"><a href="http://www2.gov.bc.ca/gov/content/home/copyright" target="_self">Copyright</a></li>
+                                <li data-order="8"><a href="http://www2.gov.bc.ca/gov/content/home/contact-us" target="_self">Contact Us</a></li>                                                       
+                                <!-- viewport toggle - set view port cookie and reload current page -->
+                                <li class="mobileToggle  hidden-lg hidden-md"><a target="_self" href="javascript:location.reload();" onclick="document.cookie = &#39;forseLargeViewport=true; path=/&#39;;">Desktop View</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div id="version">
+                <div class="container">
+                    
+                        P1:
+                    
+
+                    
+                        v1.7.X
+                    
+
+                    3ffeadc
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div id="tracking-modal" class="modal hide fade">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>About Tracking</h3>
+      </div>
+      <div class="modal-body">
+        <p>This website uses Google Analytics, a web analytics service provided by Google Inc. ("Google").</p>
+        <p>Google Analytics uses "cookies," which are text files stored on your computer that enable an analysis of your use of the website. Some of the information generated by the cookie about your use of this website may be transmitted to and stored on Google servers outside of Canada. You may refuse the use of cookies by selecting the appropriate settings in your browser; however, please note that if you do so, you may not be able to use the full functionality of this website. Furthermore, you can prevent Google’s collection and use of data generated by the cookie and related to your use of the website by downloading and installing the browser plug-in available at (<a href="http://tools.google.com/dlpage/gaoptout?hl=en" target="_blank">http://tools.google.com/dlpage/gaoptout?hl=en</a>).</p>
+        <p>This website also specifies that Google Analytics apply IP Address Anonymization <a href="https://support.google.com/analytics/answer/2763052?hl=en" target="_blank">https://support.google.com/analytics/answer/2763052?hl=en</a> so that complete IP addresses are never stored by Google.</p>
+        <p>You can learn more about Google’s Privacy Policies as they pertain to our partner use from <a href="http://www.google.com/policies/privacy/partners/" target="_blank">http://www.google.com/policies/privacy/partners/</a>.</p>
+      </div>
+    </div>
+        
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+    
+    
+    
+      
+    
+  
+    
+
+      
+
+    
+      
+      <div class="js-hide" data-module="google-analytics"
+        data-module-googleanalytics_resource_prefix="/downloads/">
+      </div>
+    
+
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2018-05-22T14:19:20/jquery.min.js"></script>
+<script type="text/javascript" src="/fanstatic/vendor/:version:2018-05-22T14:19:20/:bundle:bootstrap/js/bootstrap.min.js;jed.min.js;moment-with-locales.js;select2/select2.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2018-05-22T14:19:20/:bundle:plugins/jquery.inherit.min.js;plugins/jquery.proxy-all.min.js;plugins/jquery.url-helpers.min.js;plugins/jquery.date-helpers.min.js;plugins/jquery.slug.min.js;plugins/jquery.slug-preview.min.js;plugins/jquery.truncator.min.js;plugins/jquery.masonry.min.js;plugins/jquery.form-warning.min.js;sandbox.min.js;module.min.js;pubsub.min.js;client.min.js;notify.min.js;i18n.min.js;main.min.js;modules/select-switch.min.js;modules/slug-preview.min.js;modules/basic-form.min.js;modules/confirm-action.min.js;modules/api-info.min.js;modules/autocomplete.min.js;modules/custom-fields.min.js;modules/data-viewer.min.js;modules/table-selectable-rows.min.js;modules/resource-form.min.js;modules/resource-upload-field.min.js;modules/resource-reorder.min.js;modules/resource-view-reorder.min.js;modules/follow.min.js;modules/activity-stream.min.js;modules/dashboard.min.js;modules/resource-view-embed.min.js;view-filters.min.js;modules/resource-view-filters-form.min.js;modules/resource-view-filters.min.js;modules/table-toggle-more.min.js;modules/dataset-visibility.min.js;modules/media-grid.min.js;modules/image-upload.min.js"></script>
+<script type="text/javascript" src="/fanstatic/base/:version:2018-05-22T14:19:20/tracking.min.js"></script>
+<script type="text/javascript" src="/fanstatic/ckanext-googleanalytics/:version:2018-05-22T14:19:26/googleanalytics_event_tracking.js"></script>
+<script type="text/javascript" src="/fanstatic/edc_resource/:version:2019-01-21T10:52:42.60/responsive.js"></script>
+<script type="text/javascript" src="/fanstatic/edc_resource/:version:2019-01-21T10:52:42.60/edc_pow.js"></script>
+<script type="text/javascript" src="/fanstatic/edc_resource/:version:2019-01-21T10:52:42.60/typeahead.bundle.js"></script>
+<script type="text/javascript" src="/fanstatic/edc_resource/:version:2019-01-21T10:52:42.60/:bundle:jquery.timeago.js;search.js;edc_dataset_view.js;disqus.js;edc_gov.js"></script></body>
+  
+  <footer>
+
+	<script type="text/javascript">
+	var IDLE_TIMEOUT = 14400; //seconds =  4 hours
+	var _idleSecondsCounter = 0;
+	document.onclick = function() {
+		_idleSecondsCounter = 0;
+	};
+	document.onmousemove = function() {
+		_idleSecondsCounter = 0;
+	};
+	document.onkeypress = function() {
+		_idleSecondsCounter = 0;
+	};
+	window.setInterval(CheckIdleTime, 1000);
+
+	function CheckIdleTime() {
+		_idleSecondsCounter++;
+		var oPanel = document.getElementById("SecondsUntilExpire");
+		var user = "";
+		if (oPanel)
+			oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
+		//Fixed repeated logout bug (Khalegh Mamakani)
+		//Redirect to logout page only if the idle time is expired and the user has already logged in.
+		if (user && _idleSecondsCounter >= IDLE_TIMEOUT) {
+			//alert("Time expired!");
+			_idleSecondsCounter = 0;   //Fixed by Khalegh Mamakani; Reset the idle seconds counter
+			document.cookie = 'ckan=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+			document.location.href = "/user/_logout";
+		}
+	}
+	</script>
+
+	<!-- Copyright (c) 1996-2009 WebTrends Inc. All rights reserved. -->
+	<!-- Version: 8.6.0 -->
+	<!-- Tag Builder Version: 2.1.0 -->
+	<!-- Created: 1/15/2009 23:50:46 -->
+	<script type="text/javascript" src="/js/webtrends.js"></script>
+	<!-- *********************************************************************************** -->
+	<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+	<!-- JavaScript include file can cause serious problems with cross-domain tracking. -->
+	<!-- *********************************************************************************** -->
+	<script type="text/javascript">
+		//<![CDATA[
+		  var _tag=new WebTrends();
+		//]]>>
+	</script>
+	<script type="text/javascript">
+		//<![CDATA[
+			_tag.dcsCustom=function()
+			{ // Add custom parameters here. //_tag.DCSext.param_name=param_value;
+			}
+			_tag.dcsid = "dcs4rjxwe100008ifyptnnc1t_2r5m";
+			_tag.domain = "sdc.gov.bc.ca";
+			_tag.fpcdom = ".gov.bc.ca";
+			_tag.dcsCollect();
+		//]]>>
+	</script>
+	<noscript>
+	  <div>
+	  <img alt="" width="1" height="1" src="http://sdc.gov.bc.ca/dcs4rjxwe100008ifyptnnc1t_2r5m/njs.gif?dcsuri=/nojavascript&WT.js=No&WT.tv=8.0.2" />
+	  </div>
+	</noscript>
+	<!-- END OF SmartSource Data Collector TAG -->
+
+  
+  <!-- Snowplow starts plowing - Standalone Search vA.2.10.2 -->
+   <script type="text/javascript">
+   ;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+   p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+   };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+   n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","https://sp-js.apps.gov.bc.ca/MDWay3UqFnIiGVLIo7aoMi4xMC4y.js","snowplow"));
+   var collector = 'spt.apps.gov.bc.ca';
+   window.snowplow('newTracker','rt',collector, {
+       appId: "Snowplow_standalone",
+       platform: 'web',
+       post: true,
+       forceSecureTracker: true,
+       contexts: {
+           webPage: true,
+           performanceTiming: true
+       }
+   });
+   window.snowplow('enableActivityTracking', 30, 30); // Ping every 30 seconds after 30 seconds
+   window.snowplow('enableLinkClickTracking');
+   window.snowplow('trackPageView');
+   // Change the 'Search term parameter' to what is being used on the site, generally it is q.
+   var searchParameter = 'q';
+   if (window.location.search.indexOf(searchParameter) > -1) {
+     window.snowplow('trackSiteSearch',
+         getUrlParamArray(searchParameter,'')
+     );
+   }
+
+   function getUrlParamArray(param, defaultValue) {
+       var vars = [];
+       var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+           if ( key === param ) {
+               vars.push(value);
+           }
+       });
+       return vars;
+   }
+   </script>
+  <!-- Snowplow stop plowing -->
+  
+
+  </footer>
+
+</html>
