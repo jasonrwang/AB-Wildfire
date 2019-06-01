@@ -1,2 +1,4 @@
 matplotlib==3.*
 pandas==0.24.*
+bs4
+requests
