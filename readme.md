@@ -24,6 +24,7 @@ _2019-06-01: [Simon Bridge](https://twitter.com/srjbridge) pointed out to me tha
 
 ### To Do:
 
+- Add the data @\_Magma_\_ found from CFS dating back to 1918 [(in PDF format)](https://cfs.nrcan.gc.ca/publications?id=8998)
 - Alberta's Historical Wildfire Database has data from 1931 to 1968 recorded on microfilm. Since I wanted to do this today, and also since I'm not in Edmonton, I had to leave this time period out.
 - Look at other factors for fires, like aridity and duration of actual fire season
 - Make scripts a bit more robust for next year... how?
