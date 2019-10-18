@@ -1,16 +1,15 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jasonrwang/AB-Wildfire/master)
-
 # Alberta and British Columbia Wildfire Area Statistics Compilation
 
-A quick peek into Alberta and British Columbia's wildfire histories (we started with just Alberta).
+A quick peek into Alberta and British Columbia's wildfire histories (I started with just Alberta). Take a look at this analysis yourself:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jasonrwang/AB-Wildfire/master?urlpath=lab)
 
-Last modified: 2019-06-01 (or the latest date shown on my GitHub repo)
+Last modified: 2019-10-18 (or the latest date shown on my GitHub repo)
 
 ## Preamble
 
 Wildfire season has hit Alberta once again, and my friends and family back home are posting feverously on social media about the orange haze that has hit Alberta. Of course, there's similarly bickering about how much of this is 'normal'. We know that wildfires are intensified by the climate emergency, but there are undoubtedly many more causes.
 
-The purpose of this little notebook is just to answer a question that's been on my mind: _how does this wildfire season actually compare to previous years?_ Surprisingly, this wasn't very easy to find online, so I decided to do some work mmyself.
+The purpose of this little notebook is just to answer a question that's been on my mind: _how does this wildfire season actually compare to previous years?_ Surprisingly, this wasn't very easy to find online, so I decided to do some work myself.
 
 Of course this analysis is limited by the quality of data available. I've done my best to double check and, where I could, validate these numbers by cross-referencing them across multiple government-published data sources.
 
@@ -18,7 +17,7 @@ Lastly, I want to thank all the brave lookout staff, firefighters, civil servant
 
 _2019-06-01: [Simon Bridge](https://twitter.com/srjbridge) pointed out to me that I missed a dataset from the Canadian Wildfire Info System Datamart, which I had been looking at, actually has data for all provinces from 1950 to 2016. It's listed under 'National Fire Database fire point data' at the [CWFIS site](http://cwfis.cfs.nrcan.gc.ca/datamart). Thanks Simon._
 
-![AB Wildfires_1961-2019](img/ABWildfires_1961-2019.png)
+![AB Wildfires_1961-2019](img/ABWildfires_1918-2019.png)
 ![AB and BC Wildfires_1919-2019](img/ABandBC_Wildfires_1919-2019.png)
 ![CA Wildfires_1945-2017](img/CADWildfires_1946-2016.png)
 
