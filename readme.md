@@ -3,7 +3,7 @@
 A quick peek into Alberta and British Columbia's wildfire histories (I started with just Alberta). Take a look at this analysis yourself:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jasonrwang/AB-Wildfire/master?urlpath=lab)
 
-Last modified: 2019-10-18 (or the latest date shown on my GitHub repo)
+Last modified: 2019-10-29 (or the latest date shown on my GitHub repo)
 
 ## Preamble
 
