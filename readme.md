@@ -3,7 +3,7 @@
 A quick peek into Alberta and British Columbia's wildfire histories (I started with just Alberta). Take a look at this analysis yourself:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jasonrwang/AB-Wildfire/master?urlpath=lab)
 
-Last modified: 2019-10-29 (or the latest date shown on my GitHub repo)
+Last modified: 2026-08-21 (or the latest date shown on my GitHub repo)
 
 ## Preamble
 
@@ -17,15 +17,28 @@ Lastly, I want to thank all the brave lookout staff, firefighters, civil servant
 
 _2019-06-01: [Simon Bridge](https://twitter.com/srjbridge) pointed out to me that I missed a dataset from the Canadian Wildfire Info System Datamart, which I had been looking at, actually has data for all provinces from 1950 to 2016. It's listed under 'National Fire Database fire point data' at the [CWFIS site](http://cwfis.cfs.nrcan.gc.ca/datamart). Thanks Simon._
 
-![AB Wildfires_1961-2019](img/ABWildfires_1918-2019.png)
-![AB and BC Wildfires_1919-2019](img/ABandBC_Wildfires_1919-2019.png)
-![CA Wildfires_1945-2017](img/CADWildfires_1946-2016.png)
+![AB Wildfires_1918-present](img/ABWildfires_1918-2019.png)
+![AB and BC Wildfires_1918-present](img/ABandBC_Wildfires_1919-2019.png)
+![CA Wildfires_1946-present](img/CADWildfires_1946-2016.png)
+
+_2026: Plots are now interactive! See `Visualizations.ipynb`, built with [Altair](https://altair-viz.github.io/), for a zoomable/filterable version of the main charts above._
+
+_2026-08-10: AB and BC data now extend through the current fire season, live, sourced directly from [Alberta's Open Government wildfire data](https://open.alberta.ca/opendata/wildfire-data) + its [year-to-date feed](https://www.alberta.ca/wildfire-maps-and-data) and the [BC Wildfire Service's historical](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical) + [current fire perimeters](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-current), instead of the old one-off live scrapers, which had stopped working as both source pages went offline. `CA-Wildfire.ipynb` (Canada-wide by province) now also pulls current years from NRCan's live [National Fire Database](https://cwfis.cfs.nrcan.gc.ca/datamart) feed, on top of the original 2018 snapshot — note this only tracks fires ≥ 200 ha, and, being a live feed, its most recent complete year may lag AB/BC's own official data by a year._
+
+## Setup
+
+This project uses [`uv`](https://docs.astral.sh/uv/) to manage its Python environment and dependencies.
+
+```bash
+uv sync
+uv run jupyter lab
+```
+
+`uv sync` installs the pinned dependencies (pandas, altair, beautifulsoup4, requests, jupyter) into a local `.venv`, and `uv run jupyter lab` launches JupyterLab so you can open and run the notebooks below.
 
 ### To Do:
 
 - Look at other factors for fires, like aridity and duration of actual fire season
-- Make scripts a bit more robust for next year... how?
-- Make plots interactive!
 
 #### A guide to my logic:
 
@@ -35,6 +48,7 @@ I wrote these files in the following order; it might make sense to read them tha
 2. BC-Wildfire
 3. Summary Stats
 4. CA-Wildfire
+5. Visualizations _(interactive dashboard of the main charts above)_
 
 ### For more reading:
 

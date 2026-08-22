@@ -1,2 +1,5 @@
 .DS_Store
 .ipynb_checkpoints
+.venv
+.python-version
+__pycache__

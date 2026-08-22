@@ -1,0 +1,13 @@
+[project]
+name = "ab-wildfire"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "altair>=5.0.0",
+    "beautifulsoup4>=4.12.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.8.0",
+    "pandas>=2.1.0",
+    "requests>=2.31.0",
+    "vl-convert-python>=1.9.0.post1",
+]
