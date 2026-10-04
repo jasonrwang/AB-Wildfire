@@ -1,0 +1,57 @@
+name: Dashboard (GitHub Pages)
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 13 * * *'  # daily, to pick up the current season's live numbers
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      # Refresh data/*.csv with live current-season data. The notebooks skip the
+      # live fetch (and keep the historical data) if a government feed is down.
+      - name: Refresh compiled data
+        run: |
+          for nb in AB-Wildfire.ipynb BC-Wildfire.ipynb CA-Wildfire.ipynb; do
+            uv run jupyter nbconvert --to notebook --execute --inplace "$nb"
+          done
+
+      - name: Build dashboard
+        run: uv run python -m dashboard.build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    # The github-pages environment only accepts deploys from main; other branches
+    # can still run the build above via workflow_dispatch to test it.
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
