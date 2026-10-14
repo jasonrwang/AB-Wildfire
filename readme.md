@@ -1,9 +1,13 @@
 # Alberta and British Columbia Wildfire Area Statistics Compilation
 
-A quick peek into Alberta and British Columbia's wildfire histories (I started with just Alberta). Take a look at this analysis yourself:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jasonrwang/AB-Wildfire/master?urlpath=lab)
+A quick peek into Alberta and British Columbia's wildfire histories (I started with just Alberta).
 
-Last modified: 2026-08-21 (or the latest date shown on my GitHub repo)
+**Interactive dashboard, updated daily: https://jasonrwang.github.io/AB-Wildfire/**
+
+Or take a look at this analysis yourself:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jasonrwang/AB-Wildfire/main?urlpath=lab)
+
+Last modified: 2026-10-03 (or the latest date shown on my GitHub repo)
 
 ## Preamble
 
@@ -25,6 +29,15 @@ _2026: Plots are now interactive! See `Visualizations.ipynb`, built with [Altair
 
 _2026-08-10: AB and BC data now extend through the current fire season, live, sourced directly from [Alberta's Open Government wildfire data](https://open.alberta.ca/opendata/wildfire-data) + its [year-to-date feed](https://www.alberta.ca/wildfire-maps-and-data) and the [BC Wildfire Service's historical](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-historical) + [current fire perimeters](https://catalogue.data.gov.bc.ca/dataset/bc-wildfire-fire-perimeters-current), instead of the old one-off live scrapers, which had stopped working as both source pages went offline. `CA-Wildfire.ipynb` (Canada-wide by province) now also pulls current years from NRCan's live [National Fire Database](https://cwfis.cfs.nrcan.gc.ca/datamart) feed, on top of the original 2018 snapshot — note this only tracks fires ≥ 200 ha, and, being a live feed, its most recent complete year may lag AB/BC's own official data by a year._
 
+_2026-10-03: The interactive charts are now published as a [dashboard on GitHub Pages](https://jasonrwang.github.io/AB-Wildfire/), rebuilt every day from the live feeds above._
+
+## Data
+
+The compiled data is available as CSV:
+
+- **Latest (updated daily):** download links under each chart on the [dashboard](https://jasonrwang.github.io/AB-Wildfire/).
+- **In this repo:** [`data/ABWildfires.csv`](data/ABWildfires.csv) (individual Alberta fires: `Year`, `Area` in hectares), [`data/BCWildfires.csv`](data/BCWildfires.csv) (BC yearly totals), [`data/CAWildfires.csv`](data/CAWildfires.csv) (yearly area and area normalized by land area, by province). These are refreshed by a monthly snapshot commit, so the git history doubles as a dated record of the data.
+
 ## Setup
 
 This project uses [`uv`](https://docs.astral.sh/uv/) to manage its Python environment and dependencies.
@@ -34,7 +47,15 @@ uv sync
 uv run jupyter lab
 ```
 
-`uv sync` installs the pinned dependencies (pandas, altair, beautifulsoup4, requests, jupyter) into a local `.venv`, and `uv run jupyter lab` launches JupyterLab so you can open and run the notebooks below.
+`uv sync` installs the pinned dependencies (pandas, altair, matplotlib, requests, jupyter) into a local `.venv`, and `uv run jupyter lab` launches JupyterLab so you can open and run the notebooks below.
+
+To build the dashboard locally (after running the AB, BC, and CA notebooks to refresh `data/`):
+
+```bash
+uv run python -m dashboard.build
+```
+
+This writes `_site/index.html`. The chart definitions live in `dashboard/charts.py` and are shared with `Visualizations.ipynb`.
 
 ### To Do:
 

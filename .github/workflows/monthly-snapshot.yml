@@ -1,0 +1,50 @@
+name: Monthly data snapshot
+
+# Commits a refreshed copy of data/*.csv once a month, so the repo keeps a dated record
+# of the compiled data. The daily Pages build never commits; this also counts as repo
+# activity, which keeps GitHub from disabling the daily schedule after 60 quiet days.
+
+on:
+  schedule:
+    - cron: '0 14 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monthly-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Refresh compiled data
+        run: |
+          for nb in AB-Wildfire.ipynb BC-Wildfire.ipynb CA-Wildfire.ipynb; do
+            uv run jupyter nbconvert --to notebook --execute --inplace "$nb"
+          done
+
+      # Only the compiled CSVs are committed; notebook outputs and regenerated PNGs
+      # from the run above are discarded.
+      - name: Commit data if it changed
+        run: |
+          git add data/ABWildfires.csv data/BCWildfires.csv data/CAWildfires.csv
+          if git diff --cached --quiet; then
+            echo "No data changes this month."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Monthly data snapshot $(date -u +%Y-%m)"
+          git push origin HEAD:main
