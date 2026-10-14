@@ -28,10 +28,10 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "altair", specifier = ">=5.0.0" },
+    { name = "altair", specifier = ">=6.2.0" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "matplotlib", specifier = ">=3.8.0" },
-    { name = "pandas", specifier = ">=2.1.0" },
+    { name = "pandas", specifier = ">=3.0.0" },
     { name = "requests", specifier = ">=2.31.0" },
     { name = "vl-convert-python", specifier = ">=1.9.0.post1" },
 ]
