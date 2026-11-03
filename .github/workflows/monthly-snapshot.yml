@@ -20,11 +20,11 @@ jobs:
   snapshot:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: main
 
-      - uses: astral-sh/setup-uv@v6
+      - uses: astral-sh/setup-uv@v10.3.3
 
       - name: Install dependencies
         run: uv sync --locked
@@ -34,6 +34,11 @@ jobs:
           for nb in AB-Wildfire.ipynb BC-Wildfire.ipynb CA-Wildfire.ipynb; do
             uv run jupyter nbconvert --to notebook --execute --inplace "$nb"
           done
+
+      # Never commit a snapshot that lost years the repo already has (e.g. when a
+      # live feed is down); the run fails instead so it gets noticed.
+      - name: Check no years were lost
+        run: uv run python -m dashboard.check_data
 
       # Only the compiled CSVs are committed; notebook outputs and regenerated PNGs
       # from the run above are discarded.
