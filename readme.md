@@ -7,7 +7,7 @@ A quick peek into Alberta and British Columbia's wildfire histories (I started w
 Or take a look at this analysis yourself:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jasonrwang/AB-Wildfire/main?urlpath=lab)
 
-Last modified: 2026-10-03 (or the latest date shown on my GitHub repo)
+Last modified: 2026-11-03 (or the latest date shown on my GitHub repo)
 
 ## Preamble
 
@@ -37,6 +37,8 @@ The compiled data is available as CSV:
 
 - **Latest (updated daily):** download links under each chart on the [dashboard](https://jasonrwang.github.io/AB-Wildfire/).
 - **In this repo:** [`data/ABWildfires.csv`](data/ABWildfires.csv) (individual Alberta fires: `Year`, `Area` in hectares), [`data/BCWildfires.csv`](data/BCWildfires.csv) (BC yearly totals), [`data/CAWildfires.csv`](data/CAWildfires.csv) (yearly area and area normalized by land area, by province). These are refreshed by a monthly snapshot commit, so the git history doubles as a dated record of the data.
+
+If a government feed is down, the notebooks keep the data they compiled last time rather than dropping years, and both the daily dashboard build and the monthly snapshot refuse to publish anything with fewer years than the repo already has (`uv run python -m dashboard.check_data`). The dashboard then keeps showing the last good build until the feed recovers.
 
 ## Setup
 

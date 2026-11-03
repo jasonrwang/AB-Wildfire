@@ -18,9 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: astral-sh/setup-uv@v6
+      - uses: astral-sh/setup-uv@v10.3.3
 
       - name: Install dependencies
         run: uv sync --locked
@@ -33,10 +33,15 @@ jobs:
             uv run jupyter nbconvert --to notebook --execute --inplace "$nb"
           done
 
+      # If a feed outage dropped years the committed data has, stop here so the
+      # previously deployed site stays up instead of publishing less data.
+      - name: Check no years were lost
+        run: uv run python -m dashboard.check_data
+
       - name: Build dashboard
         run: uv run python -m dashboard.build
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -54,4 +59,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
