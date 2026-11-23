@@ -10,3 +10,8 @@ dependencies = [
     "requests>=2.31.0",
     "vl-convert-python>=1.9.0.post1",
 ]
+
+[dependency-groups]
+nbac = [
+    "shapely>=2.2.0",
+]
