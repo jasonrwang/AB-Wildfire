@@ -87,9 +87,10 @@ def build():
          'Click a province in the legend to isolate it.',
          _download_link('BC', 'BC yearly totals in hectares')),
         ('ca', 'Canada-wide by province', charts.ca_chart(data['CA']),
-         'Fires of 200 ha or more only. Use the radio buttons to switch between raw area '
-         'and share of provincial land area; click the legend to isolate a province.',
-         _download_link('CA', 'yearly area and normalized area by province')),
+         'Fires of 200 ha or more, combined from three NRCan sources (see the note under the '
+         'title; the current season is preliminary). Use the radio buttons to switch between raw '
+         'area and share of provincial land area; click the legend to isolate a province.',
+         _download_link('CA', 'yearly area and normalized area by province, with each row\'s source')),
         ('decade', 'Alberta by decade', charts.decade_chart(ab_yearly),
          'Total, mean, and maximum single-year area burned per decade.',
          ''),

@@ -15,6 +15,15 @@ DATA_FILES = {
     'CA': DATA_DIR / 'CAWildfires.csv',
 }
 
+# Values of the Source column in CAWildfires.csv (written by CA-Wildfire.ipynb).
+PRELIMINARY = 'CWFIS reported fires (preliminary)'
+CA_SOURCE_NOTE = [
+    'National Fire Database, with satellite-mapped NBAC filling province-years it misses or '
+    'undercounts (mostly 2018 on) and 2025; NBAC runs ~8% lower on average.',
+    'Faded, outlined bars: current season to date from reported fires, preliminary and '
+    'likely an undercount. Hover a bar for its source.',
+]
+
 
 def load_data():
     """Read the three compiled CSVs produced by the AB/BC/CA notebooks."""
@@ -91,18 +100,27 @@ def ca_chart(df_ca):
     )
 
     legend_select_ca = alt.selection_point(fields=['Province'], bind='legend')
+    # Year-to-date figures from the reported-fires feed: drawn faded with a dashed outline.
+    is_prelim = f'datum.Source == "{PRELIMINARY}"'
 
     return alt.Chart(df_ca).transform_calculate(
         metric_value='datum[metric]'
-    ).mark_bar().encode(
+    ).mark_bar(strokeWidth=0.8).encode(
         x=alt.X('Year:O', title='Year'),
         y=alt.Y('metric_value:Q', title='Area Burned', stack='zero'),
         color=alt.Color('Province:N', scale=alt.Scale(scheme='tableau20'), title='Province'),
         opacity=alt.condition(legend_select_ca, alt.value(1), alt.value(0.08)),
-        tooltip=['Province:N', 'Year:O', alt.Tooltip('metric_value:Q', title='Value', format=',.4f')]
+        fillOpacity=alt.condition(is_prelim, alt.value(0.35), alt.value(1)),
+        stroke=alt.condition(is_prelim, alt.value('#444'), alt.value(None)),
+        strokeDash=alt.condition(is_prelim, alt.value([3, 2]), alt.value([1, 0])),
+        tooltip=['Province:N', 'Year:O', alt.Tooltip('metric_value:Q', title='Value', format=',.4f'),
+                 alt.Tooltip('Source:N', title='Source')]
     ).add_params(metric_param, legend_select_ca).properties(
         width=700, height=400,
-        title=f'Canadian Wildfire Area Burned by Province, {int(df_ca["Year"].min())}–{int(df_ca["Year"].max())}'
+        title=alt.Title(
+            f'Canadian Wildfire Area Burned by Province, {int(df_ca["Year"].min())}–{int(df_ca["Year"].max())}',
+            subtitle=CA_SOURCE_NOTE,
+        )
     )
 
 
