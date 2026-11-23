@@ -7,7 +7,7 @@ A quick peek into Alberta and British Columbia's wildfire histories (I started w
 Or take a look at this analysis yourself:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jasonrwang/AB-Wildfire/main?urlpath=lab)
 
-Last modified: 2026-11-03 (or the latest date shown on my GitHub repo)
+Last modified: 2026-11-23 (or the latest date shown on my GitHub repo)
 
 ## Preamble
 
@@ -36,7 +36,21 @@ _2026-10-03: The interactive charts are now published as a [dashboard on GitHub 
 The compiled data is available as CSV:
 
 - **Latest (updated daily):** download links under each chart on the [dashboard](https://jasonrwang.github.io/AB-Wildfire/).
-- **In this repo:** [`data/ABWildfires.csv`](data/ABWildfires.csv) (individual Alberta fires: `Year`, `Area` in hectares), [`data/BCWildfires.csv`](data/BCWildfires.csv) (BC yearly totals), [`data/CAWildfires.csv`](data/CAWildfires.csv) (yearly area and area normalized by land area, by province). These are refreshed by a monthly snapshot commit, so the git history doubles as a dated record of the data.
+- **In this repo:** [`data/ABWildfires.csv`](data/ABWildfires.csv) (individual Alberta fires: `Year`, `Area` in hectares), [`data/BCWildfires.csv`](data/BCWildfires.csv) (BC yearly totals), [`data/CAWildfires.csv`](data/CAWildfires.csv) (yearly area and area normalized by land area, by province, with a `Source` column — see below). These are refreshed by a monthly snapshot commit, so the git history doubles as a dated record of the data.
+
+The Canada-wide data combines three NRCan sources, and each row's `Source` says which one it came from:
+
+| `Source` | What it is | Used for |
+|---|---|---|
+| `NFDB` | [National Fire Database](https://cwfis.cfs.nrcan.gc.ca/datamart), agency fire records, fires ≥ 200 ha | The default, 1946 onward |
+| `NBAC` | [National Burned Area Composite](https://cwfis.cfs.nrcan.gc.ca/datamart), satellite-mapped burned area, split by province with Statistics Canada boundaries | Province-years the NFDB is missing or reports far less for (below 75% of NBAC), and complete years the NFDB doesn't have yet |
+| `CWFIS reported fires (preliminary)` | Agencies' daily situation reports | The current season to date only; shaded on the charts |
+
+NBAC reads about 8% lower than the NFDB on average (it leaves out unburned patches inside fire perimeters), so NBAC-filled years are slightly low; they're labelled rather than adjusted. The preliminary current-season figures are a lower bound and are replaced when NBAC publishes the year, usually the following spring. To add a new NBAC year (or recompute one):
+
+```bash
+uv run --group nbac python tools/update_nbac.py 2026
+```
 
 If a government feed is down, the notebooks keep the data they compiled last time rather than dropping years, and both the daily dashboard build and the monthly snapshot refuse to publish anything with fewer years than the repo already has (`uv run python -m dashboard.check_data`). The dashboard then keeps showing the last good build until the feed recovers.
 
